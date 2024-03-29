@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+'use client'
+import React from "react";
+import "./App.css";
+import FirstScreen from "./main.tsx";
+import Header from "./header.tsx";
+import ProjectsRow from "./navigation.tsx";
+import AgonBlock from "./Projects/AGON/page.tsx";
+import ThirtyBirdsBlock from "./Projects/30 Birds/page.tsx";
+import BarterBlock from "./Projects/Barter/page.tsx";
+import Yango from "./Projects/Yango/page.tsx";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <Header />
+      <FirstScreen />
+      <ProjectsRow />
+      <AgonBlock />
+      <ThirtyBirdsBlock />
+      <BarterBlock />
+      <Yango />
+    </body>
   );
 }
 
