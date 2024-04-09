@@ -35,23 +35,20 @@ export default function ThirtyBirdsBlock() {
                         transition: { duration: 0.3 },
                       }}
                     />
-                    {/* <img src="/30Birds/arrow-1.svg"
-                        className="flex-1">
-                    </img> */}
 
                     <div className="flex flex-col w-1/5 h-auto items-center">
-                    <img src="/30Birds/big bird.svg"
-                        alt="30Birds"
+                    <img src="/30Birds/Big Bird.svg"
+                        alt="Origami Bird"
                         className="max-w-24">
                     </img>
 
                     <img src="/30Birds/arrow-2.svg"
-                        alt="30Birds"
+                        alt="arrow"
                         className="w-20">
                     </img>
                     </div>
                 
-                    <img src="/30Birds/Open_bird.webp" 
+                    <img src="/30Birds/open_bird.webp" 
                     alt="30Birds" 
                     className="w-2/5 h-auto"  />
                      </div>
@@ -77,7 +74,7 @@ export default function ThirtyBirdsBlock() {
             
             
              <div className="flex flex-row flex-wrap items-start justify-between w-full h-auto pt-20 pb-10 gap-6">
-                    <motion.img src="/30Birds/Cabinet.webp" 
+                    <motion.img src="/30Birds/cabinet.webp" 
                     alt="30Birds" 
                     width={1280} 
                     height={720} 
@@ -96,7 +93,7 @@ export default function ThirtyBirdsBlock() {
                       }}
                     whileTap={{scale:1.5}}>
                         <ReactPlayer
-                        url="/30birds/skillsbar.webm"
+                        url="/30Birds/skillsbar.webm"
                         playing={true}
                         loop={true}
                         controls={true}
@@ -107,7 +104,7 @@ export default function ThirtyBirdsBlock() {
                         />
                     </motion.div>
 
-                    <motion.img src="/30Birds/popup-award.webp" 
+                    <motion.img src="/30Birds/Popup-Award.webp" 
                     alt="30Birds" 
                     width={1280} 
                     height={720} 
@@ -192,7 +189,7 @@ export default function ThirtyBirdsBlock() {
                         <p>Gamification help find new faces in company, get to know each other and see your team impact</p>
                         <div className="flex flex-row flex-wrap w-full h-auto pt-2 pb-10 gap-2">
 
-                        <motion.img src="/30Birds/receiver-card.svg" 
+                        <motion.img src="/30Birds/Receiver-card.svg" 
                         alt="30Birds" 
                         className="flex-1 max-w-32 w-1/3 h-auto" 
                         initial={{ 
@@ -224,7 +221,7 @@ export default function ThirtyBirdsBlock() {
                         }}
                         whileTap={{scale:2}}/>
 
-                        <motion.img src="/30Birds/builders-card.svg" 
+                        <motion.img src="/30Birds/Builders-card.svg" 
                         alt="30Birds" 
                         className="flex-1 max-w-32 w-1/3 h-auto" 
                         initial={{ 
@@ -242,7 +239,7 @@ export default function ThirtyBirdsBlock() {
                             zIndex: 10,
                         }}/>
 
-                        <motion.img src="/30Birds/team-card.svg" 
+                        <motion.img src="/30Birds/Team-card.svg" 
                         alt="30Birds" 
                         className="flex-1 max-w-32 w-1/3 h-auto" 
                         initial={{ 
@@ -260,7 +257,7 @@ export default function ThirtyBirdsBlock() {
                             zIndex: 10,
                         }}/>
 
-                        <motion.img src="/30Birds/networker.svg" 
+                        <motion.img src="/30Birds/Networker.svg" 
                         alt="30Birds" 
                         className="flex-1 max-w-32 w-1/3 h-auto" 
                         initial={{ 
@@ -278,7 +275,7 @@ export default function ThirtyBirdsBlock() {
                             zIndex: 10,
                         }}/>
 
-                        <motion.img src="/30Birds/praised-mark.svg" 
+                        <motion.img src="/30Birds/Praised-mark.svg" 
                         alt="30Birds" 
                         className="flex-1 max-w-32 w-1/3 h-auto" 
                         initial={{ 
@@ -302,7 +299,7 @@ export default function ThirtyBirdsBlock() {
             
             {/* Block with team view */}
              <div className="flex flex-row flex-wrap w-full h-auto pt-10 pb-10 gap-8">
-                    <motion.img src="/30Birds/TeamView.webp" 
+                    <motion.img src="/30Birds/teamview.webp" 
                     alt="30Birds" 
                     className="w-full flex-1 rounded-xl shadowblock"
                     whileHover={{
@@ -318,7 +315,7 @@ export default function ThirtyBirdsBlock() {
             
             {/* Block with skill search */}
              <div className="flex w-full h-auto pt-10 pb-10">
-                    <motion.img src="/30Birds/Skill_search.webp" 
+                    <motion.img src="/30Birds/skill_search.webp" 
                     alt="30Birds" 
                     width={1280} 
                     height={720} 

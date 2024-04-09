@@ -42,7 +42,7 @@ export default function BarterBlock() {
                 zIndex: 10,
             }}>
                 <ReactPlayer
-                    url="/Barter/Barter.webm"
+                    url="/Barter/barter.webm"
                     playing={true}
                     loop={true}
                     controls={true}
@@ -70,6 +70,7 @@ export default function BarterBlock() {
                     url="/Barter/barterchange.webm"
                     playing={true}
                     loop={true}
+                    controls={true}
                     alt="barter interface"
                     width={"100%"}
                     height={"auto"}
@@ -94,6 +95,7 @@ export default function BarterBlock() {
                         url="/Barter/bartermobile.webm"
                         playing={true}
                         loop={true}
+                        controls={true}
                         alt="Agon"
                         width={240}
                         height={"auto"}
@@ -116,6 +118,7 @@ export default function BarterBlock() {
                     url="/Barter/explore.webm"
                     playing={true}
                     loop={true}
+                    controls={true}
                     alt="barter interface"
                     width={"100%"}
                     height={"auto"}
@@ -130,7 +133,7 @@ export default function BarterBlock() {
             
             <div className="flex flex-row flex-wrap justify-around w-full h-auto pt-10 pb-10 gap-4">
 
-                    <motion.img src="/barter/algorithm.webp" 
+                    <motion.img src="/Barter/algorithm.webp" 
                         alt="30Birds" 
                         className="flex-3 w-45 h-auto rounded-xl" 
                         initial={{ 
@@ -146,7 +149,7 @@ export default function BarterBlock() {
                         }}
                         whileTap={{ scale: 2 }}
                         />
-                    <motion.img src="/barter/transformation.webp" 
+                    <motion.img src="/Barter/transformation.webp" 
                         alt="30Birds" 
                         className="flex-3 w-45 h-auto rounded-xl" 
                         initial={{ 
@@ -162,7 +165,7 @@ export default function BarterBlock() {
                         }}
                         whileTap={{ scale: 2 }}
                         />
-                    <motion.img src="/barter/types.webp" 
+                    <motion.img src="/Barter/types.webp" 
                         alt="Barter graphic for deck" 
                         className="flex-3 w-45 h-auto rounded-xl" 
                         initial={{ 
@@ -178,7 +181,7 @@ export default function BarterBlock() {
                         }}
                         whileTap={{ scale: 2 }}
                     />
-                    <motion.img src="/barter/multiverse.webp" 
+                    <motion.img src="/Barter/multiverse.webp" 
                         alt="30Birds" 
                         className="flex-3 w-45 h-auto rounded-xl" 
                         initial={{ 

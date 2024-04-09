@@ -58,7 +58,7 @@ export default function YangoBlock() {
                           }}
                     >
                     <img
-                        src="/Yango/Map.webp"
+                        src="/Yango/map.webp"
                         alt="Order process in Yango app"
                         width={220}
                         height={"auto"}
@@ -79,7 +79,7 @@ export default function YangoBlock() {
                           }}
                     >
                     <img
-                        src="/Yango/History.webp"
+                        src="/Yango/history.webp"
                         alt="Order history page in Yango app"
                         width={220}
                         height={"auto"}
