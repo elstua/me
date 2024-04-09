@@ -98,7 +98,7 @@ export default function AgonBlock() {
                         whileTap={{ scale: 1.5}}
                     >
                     <img
-                        src="/Agon/Challenge.png"
+                        src="/Agon/Challenge.webp"
                         alt="Agon"
                         width={220}
                         height={"auto"}
@@ -265,7 +265,7 @@ export default function AgonBlock() {
                         }}
                     >
                     <img
-                        src="/Agon/Onboarding04.webp"
+                        src="/Agon/onboarding04.webp"
                         alt="Agon"
                         width={220}
                         height={"auto"}
