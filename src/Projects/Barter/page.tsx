@@ -15,36 +15,57 @@ export default function BarterBlock() {
                     startDate={2022}
                     endDate={2023}
                     description="Make WEB3 more touchy" 
+                    link="https://barterswap.xyz/"
+                    linkText="Landing page"
             />
 
 
              <div className="flex w-2/3 h-auto pt-20 pb-10">
-                <div className='w-full font-mono text-sm'>
+                <div className='w-full font-mono text-sm text-neutral-900'>
                 <p>
-                Barter is an intent based swap tool that change space of swapping crypto. Founders asked me to find a design language, build branding and explore the way to make a B2C part of product — interface for swaps.
+                Barter is an intent based swap tool that saves money. Founders asked me to find a design language, create branding and explore the way to make a B2C part of product — exchange platform.
                 </p> 
                 <p>
-                Main idea of interface and branding — make crypto more material. With intetion to move away I design interfaces and marketing materials as interactive objects in digital space.
+                I decided to build design language around two main cores: build something material and touchy, and make it warm and calm. With intetion to move away from typical themes in crypto space I design interfaces and marketing materials as interactive objects and a worlds inside its own.
                 </p> 
                 </div>
              </div>
 
-            <div className="flex w-full pt-20 pb-10">
+            <motion.div className="flex w-full pt-20 pb-10"
+            whileHover={{
+                scale: 1.1,
+                zIndex: 10,
+                rotate: 0,
+                transition: { duration: 0.3 },
+            }}
+            whileTap={{scale:1.3,
+                zIndex: 10,
+            }}>
                 <ReactPlayer
                     url="/Barter/Barter.webm"
                     playing={true}
                     loop={true}
+                    controls={true}
                     alt="barter interface"
                     width={"100%"}
                     height={"auto"}
                     style={{ borderRadius: '16px', overflow: 'hidden'}}
                     styleName="shadowblock"
                 />
-            </div>
+            </motion.div>
 
               {/* flow block */}
             <div className="flex w-full h-auto justify-around pt-10 pb-10 gap-8">
-                <div className='browserwindow w-1/2'>
+                <motion.div className='browserwindow w-1/2'
+                whileHover={{
+                    scale: 1.1,
+                    zIndex: 10,
+                    rotate: 0,
+                    transition: { duration: 0.3 },
+                }}
+                whileTap={{scale:1.3,
+                    zIndex: 10,
+                }}>
                 <ReactPlayer
                     url="/Barter/barterchange.webm"
                     playing={true}
@@ -55,11 +76,20 @@ export default function BarterBlock() {
                     style={{ borderRadius: '16px', overflow: 'hidden'}}
                     styleName="shadowblock"
                 />
-                </div>
+                </motion.div>
                 
-                <div 
+                <motion.div 
                     className='h-full phone-block'
-                    style={{ transform: `rotate(${getRandomRotation()}deg)`}} >
+                    initial={{ rotate: getRandomRotation() }}
+                    whileHover={{
+                        scale: 1.1,
+                        zIndex: 10,
+                        rotate: 0,
+                        transition: { duration: 0.3 },
+                    }}
+                    whileTap={{scale:1.3,
+                        zIndex: 10,
+                    }} >
                     <ReactPlayer
                         url="/Barter/bartermobile.webm"
                         playing={true}
@@ -69,10 +99,19 @@ export default function BarterBlock() {
                         height={"auto"}
                         style={{ borderRadius: '24px', overflow: 'hidden'}}
                     />
-                    </div>
+                    </motion.div>
             </div>
             
-            <div className='browserwindow w-full'>
+            <motion.div className='browserwindow w-full'
+            whileHover={{
+                scale: 1.1,
+                zIndex: 10,
+                rotate: 0,
+                transition: { duration: 0.3 },
+            }}
+            whileTap={{scale:1.3,
+                zIndex: 10,
+            }}>
                 <ReactPlayer
                     url="/Barter/explore.webm"
                     playing={true}
@@ -83,13 +122,13 @@ export default function BarterBlock() {
                     style={{ borderRadius: '16px', overflow: 'hidden'}}
                     styleName="shadowblock"
                 />
-            </div>
+            </motion.div>
 
             <div className=' flex-1 w-full font-mono text-sm pt-10'>
-                     <p>A couple of images for pitchdeck and social media</p>
+                     <p>A couple of images from pitchdeck and social media</p>
             </div>
             
-            <div className="flex flex-row flex-wrap justify-around w-full h-auto pt-10 pb-20 gap-4">
+            <div className="flex flex-row flex-wrap justify-around w-full h-auto pt-10 pb-10 gap-4">
 
                     <motion.img src="/barter/algorithm.webp" 
                         alt="30Birds" 

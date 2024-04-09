@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectHeader from "../../projectheader";
+import { motion } from "framer-motion";
 
 export default function YangoBlock() {
 
@@ -17,46 +18,74 @@ export default function YangoBlock() {
                 startDate={2017} 
                 endDate={2020} 
                 description="Biggest Taxi and delivery service in Russia" 
+                link="https://apps.apple.com/pt/app/yandex-go-taxi-food-delivery/id472650686?l=en-GB"
+                linkText="App at App Store"
                 />
 
 
                 <div className="flex justify-between w-full pt-10 pb-10 place-content-center">
-                <div 
-                    className='h-full phone-block'
-                    style={{ transform: `rotate(${getRandomRotation()}deg)` }}
-                >
-                    <img
-                        src="/Agon/Onboarding01.png"
-                        alt="Agon"
-                        width={260}
-                        height={640}
-                        className="h-full screen-block"
-                    />
-                </div>
-                <div 
-                    className='h-full phone-block'
-                    style={{ transform: `rotate(${getRandomRotation()}deg)`, marginTop: '80px' }}
-                >
-                    <img
-                        src="/Agon/Onboarding02.png"
-                        alt="Agon"
-                        width={260}
-                        height={640}
-                        className="h-full screen-block"
-                    />
-                    </div>
-                    <div 
+                <motion.div 
                         className='h-full phone-block'
-                        style={{ transform: `rotate(${getRandomRotation()}deg)`}}
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.1,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                        }}
                     >
                     <img
-                        src="/Agon/Onboarding04.png"
-                        alt="Agon"
-                        width={260}
-                        height={640}
+                        src="/Yango/delivery.webp"
+                        alt="Delivery option in Yango app"
+                        width={220}
+                        height={"auto"}
                         className="h-full screen-block"
                     />
-                    </div>
+                    </motion.div>
+
+                    <motion.div 
+                        className='h-full phone-block'
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.1,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                          }}
+                    >
+                    <img
+                        src="/Yango/Map.webp"
+                        alt="Order process in Yango app"
+                        width={220}
+                        height={"auto"}
+                        className="h-full screen-block"
+                    />
+                    </motion.div>
+
+                    <motion.div 
+                        className='h-full phone-block'
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.1,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                          }}
+                    >
+                    <img
+                        src="/Yango/History.webp"
+                        alt="Order history page in Yango app"
+                        width={220}
+                        height={"auto"}
+                        className="h-full screen-block"
+                    />
+                    </motion.div>
                 </div>
         </div>
         </div>

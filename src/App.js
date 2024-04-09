@@ -9,6 +9,7 @@ import ThirtyBirdsBlock from "./Projects/30 Birds/page.tsx";
 import BarterBlock from "./Projects/Barter/page.tsx";
 import Yango from "./Projects/Yango/page.tsx";
 import { Element } from "react-scroll";
+import Footer from "./footer.tsx";
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Element name="30birds" ><ThirtyBirdsBlock /></Element>
       <Element name="barter"><BarterBlock /></Element>
       <Element name="yango"><Yango /></Element>
+      <Footer />
     </body>
   );
 }

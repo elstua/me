@@ -27,10 +27,10 @@ export function HeaderNav(){
             {links.map((link, index) => (
                 <Link
                     className="flex flex-1 justify-center content-center items-center align-middle
-                    rounded-full font-mono text-m h-12 text-black cursor-pointer
-                    transition-all ease-in-out
-                    hover: hover:bg-stone-400 duration-300 ..."
-                    activeClass="font-extrabold decoration-solid"
+                    rounded-full font-mono text-sm h-12 text-black cursor-pointer
+                    transition-all ease-in-out headernav
+                    duration-300 ..."
+                    activeClass="font-extrabold"
                     to={link.href}
                     spy={true} 
                     hashSpy={true}
@@ -63,7 +63,7 @@ export default function Header(){
     const [showNav, setShowNav,] = useState(false);
     const headerScroll = () => {
         const scrollPosition = window.scrollY;
-        const threshold = window.innerHeight * 0.01;
+        const threshold = window.innerHeight * 0.7;
 
         if (scrollPosition > threshold) {
             setShowNav(true);
@@ -75,20 +75,20 @@ export default function Header(){
         const { scrollY } = useScroll();
     const headerColor = useTransform(
       scrollY,
-      [0, 200],
-      ["#fff7ed", "rgba(232, 219, 200, 0.8)"]
+      [400, 800],
+      ["#fff7ed", "rgba(232, 220, 200, 0.8)"]
     );
 
     const padding = useTransform(
         scrollY,
-        [0, 150],
+        [400, 800],
         ["8px", "16px"]
     );
 
     const blur = useTransform(
         // Add the missing CSS filter style
         scrollY,
-        [0, 200],
+        [400, 800],
         [`blur(32px)`, `blur(0px)`]
     );
 
@@ -100,18 +100,17 @@ export default function Header(){
     }, []);
 
     return (
-            <header className= "flex flex-col items-center justify-between fixed top-0 left-0 right-0 z-30 pl-32 pr-32 pt-4 min-h-18">
-            <motion.div 
-            className={` header-width flex flex-row items-center justify-between h-20`} 
-            id="headnav">
-                <motion.div className={`flex w-full flex-row rounded-full backdrop-blur-lg ${showNav ? "showNav" : "hideNav"}`}
+            <header className= "flex flex-col items-center fixed top-0 left-0 right-0 z-30 pl-32 pr-32 pt-4 min-h-18">
+            <div 
+            className={` header-width items-between flex-row h-20`}>
+                <motion.div className={`flex justify-between w-full flex-row rounded-full backdrop-blur-lg ${showNav ? "showNav" : "hideNav"}`}
                 style={{ backgroundColor: headerColor, padding: padding, filter: blur}}
                 >
                 <Link
-                    className="flex version p-4 justify-center content-center items-center align-middle
-                    rounded-full font-mono text-m h-12 text-black cursor-pointer
+                    className="flex p-4 justify-center content-center items-center align-middle
+                    rounded-full font-mono text-sm h-12 text-black cursor-pointer
                     transition-all ease-in-out
-                    hover: hover:bg-stone-400 duration-300 ..."
+                    headernav duration-300 ..."
                     activeClass="font-extrabold decoration-solid"
                     to={"main"}
                     smooth={true} 
@@ -120,12 +119,20 @@ export default function Header(){
                 >
                     Artem Savelev
                 </Link>
-                <div
-                    className={`flex flex-row flex-1 content-between ${showProjectNav ? "show" : "hide"}`}>
+                <div className={`flex flex-row w-2/4 content-between ${showProjectNav ? "show" : "hide"}`}>
                     <HeaderNav />
                 </div>
+                <a
+                    href="mailto:stua@fastmail.com"
+                    className="flex p-4 justify-center content-center items-center align-middle
+                    rounded-full font-mono text-sm h-12 text-black cursor-pointer
+                    transition-all ease-in-out
+                    headernav duration-300 ..."
+                >
+                    ↘︎ Contact me
+                </a>
                 </motion.div>
-            </motion.div>
+            </div>
             
         </header>
     );

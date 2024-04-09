@@ -17,6 +17,8 @@ export default function ThirtyBirdsBlock() {
                     startDate={2023}
                     endDate={2023}
                     description="Transform 360 review with constant feedback" 
+                    link="https://app.30birds.xyz/profile/U04N8RJQQQ7"
+                    linkText="Profile at 30birds"
             />
 
             <div className="flex flex-row flex-wrap items-center justify-between w-full h-auto pt-10 pb-10">
@@ -55,38 +57,67 @@ export default function ThirtyBirdsBlock() {
                      </div>
 
 
-             <div className="flex w-2/3 h-auto pt-10 pb-10">
-                <div className='w-full text-sm font-mono'>
+             <div className="flex w-full justify-center pt-10 pb-10">
+                <div className='flex flex-col gap-8 w-2/4 text-sm font-mono'>
                 <p>
-                HRtech, recognition & meritocracy SaaS that transform 360 review process with consist feedback in form of a praise. Write what you praise your colleague for, select skills and sent a bird. Birds bring points, awards and make everyone in company visible</p> 
+                30 Birds was born from the idea that we often underappreciate each other in the work environment, and that genuine appreciation holds more significance than mere points on a CV. Positive feedback has the power to engage everyone in a team more effectively than any KPI.
+                </p>
+                <p>
+                Started from a simple Slack bot for sending 'birds' I led the team in designing a web suite around these ideas and developed the right brand identity for it.
+                </p>
+                <p>
+                The concept of origami birds, suggested by a designer friend I incorporate into the product in various forms, from instruction-like illustrations to paper-like UI elements. And, of course, actual birds for praises.    
+                </p>
+                <p>
+                Collaborating with founders and clients, we defined the main user cases and sought to understand how to establish a continuous feedback loop that could transform traditional 360-degree reviews, and how users could carry this feedback culture with them to new environments.
+                </p> 
                 </div>
              </div>
 
             
             
              <div className="flex flex-row flex-wrap items-start justify-between w-full h-auto pt-20 pb-10 gap-6">
-                    <img src="/30Birds/Cabinet.webp" 
+                    <motion.img src="/30Birds/Cabinet.webp" 
                     alt="30Birds" 
                     width={1280} 
                     height={720} 
-                    className="flex-1 h-full rounded-xl shadowblock" />
+                    className="flex-1 h-full rounded-xl shadowblock"
+                    whileHover={{
+                        scale: 1.1,
+                        rotate: 0,
+                        transition: { duration: 0.3 },
+                      }}/>
 
-                    <div className="flex-2 w-45 h-auto">
+                    <motion.div className="flex-2 w-45 h-auto"
+                    whileHover={{
+                        scale: 1.1,
+                        rotate: 0,
+                        transition: { duration: 0.3 },
+                      }}
+                    whileTap={{scale:1.5}}>
                         <ReactPlayer
                         url="/30birds/skillsbar.webm"
                         playing={true}
                         loop={true}
+                        controls={true}
                         alt="Agon"
                         width={"100%"}
                         height={"auto"}
                         style={{ borderRadius: '16px', overflow: 'hidden'}}
                         />
-                    </div>
-                    <img src="/30Birds/popup-award.webp" 
+                    </motion.div>
+
+                    <motion.img src="/30Birds/popup-award.webp" 
                     alt="30Birds" 
                     width={1280} 
                     height={720} 
-                    className="flex-3 w-1/2 h-auto rounded-xl " />
+                    className="flex-3 w-1/2 h-auto rounded-xl "
+                    whileHover={{
+                        scale: 1.1,
+                        rotate: 0,
+                        transition: { duration: 0.3 },
+                      }}
+                      whileTap={{scale:1.5}}/>
 
                 </div>
 
@@ -104,7 +135,9 @@ export default function ThirtyBirdsBlock() {
                             zIndex: 10,
                             rotate: 0,
                             transition: { duration: 0.3 },
-                    }}/>
+                    }}
+                    whileTap={{scale:1.5}}/>
+
                     <motion.img src="/30Birds/achieve.webp" 
                         alt="30Birds" 
                         className="flex-3 w-1/3 h-auto" 
@@ -118,7 +151,9 @@ export default function ThirtyBirdsBlock() {
                             zIndex: 10,
                             rotate: 0,
                             transition: { duration: 0.3 },
-                    }}/>
+                    }}
+                    whileTap={{scale:1.5}}/>
+
                     <motion.img src="/30Birds/card2.webp" 
                         alt="30Birds" 
                         className="flex-3 w-1/3 h-auto" 
@@ -133,39 +168,167 @@ export default function ThirtyBirdsBlock() {
                             rotate: 0,
                             transition: { duration: 0.3 },
                     }}
-                        whileTap={{scale:1.4}}/>
+                        whileTap={{scale:1.5}}/>
                     
                 </div>
 
 
              <div className="flex flex-row-reverse w-full h-auto pt-20 pb-10 gap-8 font-mono text-sm">
                     {/* <div className='h-80 w-full bg-slate-900'><p>main screen of 30birds</p> </div> */}
-                    <img src="/30Birds/company_view.webp" 
+                    <motion.img src="/30Birds/company_view.webp" 
                     alt="30Birds" 
                     width={1280} 
                     height={720} 
-                    className="w-2/3 flex-1 rounded-xl shadowblock" />
+                    className="w-2/3 h-auto flex-1 rounded-xl shadowblock"
+                    whileHover={{
+                        scale: 1.1,
+                        zIndex: 10,
+                        rotate: 0,
+                        transition: { duration: 0.3 },
+                    }}
+                    whileTap={{scale:1.2}}/>
                 
-                    <div className='flex-1 h-90 w-full'>
-                        <p>Gamification help find new faces in company, get to know each other and see team impact</p>
+                    <div className='flex-1 w-full text-sm font-mono'>
+                        <p>Gamification help find new faces in company, get to know each other and see your team impact</p>
+                        <div className="flex flex-row flex-wrap w-full h-auto pt-2 pb-10 gap-2">
 
+                        <motion.img src="/30Birds/receiver-card.svg" 
+                        alt="30Birds" 
+                        className="flex-1 max-w-32 w-1/3 h-auto" 
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            zIndex: 1,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.5,
+                            zIndex: 10,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                        }}
+                        whileTap={{scale:2}}/>
+
+                        <motion.img src="/30Birds/sender-card.svg" 
+                        alt="30Birds" 
+                        className="flex-1 max-w-32 w-1/3 h-auto" 
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            zIndex: 1,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.5,
+                            zIndex: 10,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                        }}
+                        whileTap={{scale:2}}/>
+
+                        <motion.img src="/30Birds/builders-card.svg" 
+                        alt="30Birds" 
+                        className="flex-1 max-w-32 w-1/3 h-auto" 
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            zIndex: 1,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.5,
+                            zIndex: 10,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                        }}
+                        whileTap={{scale:2,
+                            zIndex: 10,
+                        }}/>
+
+                        <motion.img src="/30Birds/team-card.svg" 
+                        alt="30Birds" 
+                        className="flex-1 max-w-32 w-1/3 h-auto" 
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            zIndex: 1,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.5,
+                            zIndex: 10,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                        }}
+                        whileTap={{scale:2,
+                            zIndex: 10,
+                        }}/>
+
+                        <motion.img src="/30Birds/networker.svg" 
+                        alt="30Birds" 
+                        className="flex-1 max-w-32 w-1/3 h-auto" 
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            zIndex: 1,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.5,
+                            zIndex: 10,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                        }}
+                        whileTap={{scale:2,
+                            zIndex: 10,
+                        }}/>
+
+                        <motion.img src="/30Birds/praised-mark.svg" 
+                        alt="30Birds" 
+                        className="flex-1 max-w-32 w-1/3 h-auto" 
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            zIndex: 1,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.5,
+                            zIndex: 10,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                        }}
+                        whileTap={{scale:2,
+                            zIndex: 10,
+                        }}/>
+                        
+                        </div>
                     </div>
              </div>
             
             {/* Block with team view */}
-             <div className="flex flex-row flex-wrap w-full h-auto pt-20 pb-10 gap-8">
-                    <img src="/30Birds/TeamView.webp" 
+             <div className="flex flex-row flex-wrap w-full h-auto pt-10 pb-10 gap-8">
+                    <motion.img src="/30Birds/TeamView.webp" 
                     alt="30Birds" 
-                    className="w-full flex-1 rounded-xl shadowblock" />
+                    className="w-full flex-1 rounded-xl shadowblock"
+                    whileHover={{
+                        scale: 1.1,
+                        zIndex: 10,
+                        rotate: 0,
+                        transition: { duration: 0.3 },
+                    }}
+                    whileTap={{scale:1.3,
+                        zIndex: 10,
+                    }} />
              </div>
             
             {/* Block with skill search */}
              <div className="flex w-full h-auto pt-10 pb-10">
-                    <img src="/30Birds/Skill_search.webp" 
+                    <motion.img src="/30Birds/Skill_search.webp" 
                     alt="30Birds" 
                     width={1280} 
                     height={720} 
-                    className="h-full rounded-xl shadowblock" />
+                    className="h-full rounded-xl shadowblock"
+                    whileHover={{
+                        scale: 1.1,
+                        rotate: 0,
+                        transition: { duration: 0.3 },
+                      }}
+                      whileTap={{scale:1.3}} />
             </div>
 
             {/* <div className="flex w-full h-auto pt-10 pb-10">
