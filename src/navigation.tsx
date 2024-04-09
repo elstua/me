@@ -64,7 +64,7 @@ export default function ProjectsRow(){
                         duration={500}
                         className="flex flex-col w-full p-4 justify-between"
                         >
-                            <img src="/30birds/logo.svg" alt="30 Birds" className="w-2/3"/>
+                            <img src="/30Birds/logo.svg" alt="30 Birds" className="w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">SaaS</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">HR-tech</div>
@@ -93,7 +93,7 @@ export default function ProjectsRow(){
                         duration={500}
                         className="flex flex-col w-full p-4 justify-between"
                         >
-                            <img src="/barter/Logo.svg" alt="Barter logo" className="w-2/3"/>
+                            <img src="/Barter/Logo.svg" alt="Barter logo" className="w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Web3</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Infrastructure</div>
@@ -122,7 +122,7 @@ export default function ProjectsRow(){
                         duration={500}
                         className="flex flex-col w-full p-4 justify-between"
                         >
-                            <img src="/yango/logo.svg" alt="Yango logo" className="w-2/3"/>
+                            <img src="/Yango/logo.svg" alt="Yango logo" className="w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Taxi</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Delivery</div>

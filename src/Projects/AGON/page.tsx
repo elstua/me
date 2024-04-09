@@ -98,7 +98,7 @@ export default function AgonBlock() {
                         whileTap={{ scale: 1.5}}
                     >
                     <img
-                        src="/Agon/Challenge.webp"
+                        src="/Agon/challenge.webp"
                         alt="Agon"
                         width={220}
                         height={"auto"}
@@ -118,7 +118,9 @@ export default function AgonBlock() {
                         rotate: 0,
                         transition: { duration: 0.3 },
                       }}
-                      whileTap={{ scale: 1.3}} />
+                      whileTap={{ scale: 1.5,
+                        zIndex: 10,
+                      }} />
                     <motion.img src="/Agon/done_card.webp" alt="Agon"
                        className="w-60 h-auto"
                        initial={{ 
@@ -128,9 +130,12 @@ export default function AgonBlock() {
                     whileHover={{
                         scale: 1.1,
                         rotate: 0,
+                        zIndex: 10,
                         transition: { duration: 0.3 },
                       }}
-                      whileTap={{ scale: 1.5}}/>
+                      whileTap={{ scale: 1.5,
+                        zIndex: 10, 
+                      }}/>
                     <motion.img src="/Agon/top15_card.webp" alt="Agon"
                      className="w-60 h-auto"
                      initial={{ 
@@ -140,9 +145,12 @@ export default function AgonBlock() {
                     whileHover={{
                         scale: 1.1,
                         rotate: 0,
+                        zIndex: 10,
                         transition: { duration: 0.3 },
                       }}
-                      whileTap={{ scale: 1.3}}/>
+                      whileTap={{ scale: 1.3,
+                        zIndex: 10
+                      }}/>
                     <motion.img src="/Agon/last_day_card.webp" alt="Agon"
                      className="w-60 h-auto"
                      initial={{ 
@@ -152,9 +160,12 @@ export default function AgonBlock() {
                     whileHover={{
                         scale: 1.1,
                         rotate: 0,
+                        zIndex: 10,
                         transition: { duration: 0.3 },
                       }}
-                      whileTap={{ scale: 1.5}}/>
+                      whileTap={{ scale: 1.5,
+                        zIndex: 10,
+                      }}/>
                     <motion.img src="/Agon/top10_card.webp" alt="Agon"
                      className="w-60 h-auto"
                      initial={{ 
@@ -164,9 +175,12 @@ export default function AgonBlock() {
                     whileHover={{
                         scale: 1.1,
                         rotate: 0,
+                        zIndex: 10,
                         transition: { duration: 0.3 },
                       }}
-                      whileTap={{ scale: 1.5}}/>
+                      whileTap={{ scale: 1.5,
+                        zIndex: 10,
+                      }}/>
                      <p className="font-mono text-sm">different states of active challenges in feed</p>
                     </div>
                 </div>

@@ -104,8 +104,8 @@ export default function ThirtyBirdsBlock() {
                         />
                     </motion.div>
 
-                    <motion.img src="/30Birds/Popup-Award.webp" 
-                    alt="30Birds" 
+                    <motion.img src="/30Birds/skillaward.webp" 
+                    alt="Popup with award for skills" 
                     width={1280} 
                     height={720} 
                     className="flex-3 w-1/2 h-auto rounded-xl "
@@ -120,7 +120,7 @@ export default function ThirtyBirdsBlock() {
 
                 <div className="flex flex-row flex-wrap items-center w-full h-auto pt-10 pb-10">
                     <motion.img src="/30Birds/card1.webp" 
-                        alt="30Birds" 
+                        alt="Open bird with praise" 
                         className="flex-3 w-1/3 h-auto" 
                         initial={{ 
                             rotate: `${String(getRandomRotation())}deg`,
@@ -136,7 +136,7 @@ export default function ThirtyBirdsBlock() {
                     whileTap={{scale:1.5}}/>
 
                     <motion.img src="/30Birds/achieve.webp" 
-                        alt="30Birds" 
+                        alt="Achivement for skills" 
                         className="flex-3 w-1/3 h-auto" 
                         initial={{ 
                             rotate: `${String(getRandomRotation())}deg`,
@@ -152,7 +152,7 @@ export default function ThirtyBirdsBlock() {
                     whileTap={{scale:1.5}}/>
 
                     <motion.img src="/30Birds/card2.webp" 
-                        alt="30Birds" 
+                        alt="open bird with big praise" 
                         className="flex-3 w-1/3 h-auto" 
                         initial={{ 
                             rotate: `${String(getRandomRotation())}deg`,
