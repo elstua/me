@@ -1,7 +1,5 @@
-
 import { motion } from "framer-motion";
 import React from 'react';
-import ReactPlayer from "react-player";
 import { Link, animateScroll as scroll} from 'react-scroll';
 
 export default function ProjectsRow(){
