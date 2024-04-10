@@ -10,12 +10,12 @@ export default function ProjectsRow(){
 
     return (
         <div id="yango" className="flex flex-col items-center w-full">
-        <div className="content-width font-mono text-sm text-neutral-900 items-left pb-8"><p>There are selected projects from small startups to huge corporations</p></div>
-        <div className="content-width flex flex-row flex-wrap items-center justify-between gap-4">
+        <div className="content-width font-mono text-sm text-neutral-900 items-left pb-12 md:sm-8"><p>There are selected projects from small startups to huge corporations</p></div>
+        <div className="content-width flex flex-col md:flex-row flex-wrap items-center justify-between gap-1 md:gap-4">
 
             
             <motion.div 
-                className="flex flex-auto w-1/5 rounded-2xl h-64 cursor-pointer bg-white"
+                className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 rounded-2xl cursor-pointer bg-white"
                 initial={{ 
                     rotate: `${String(getRandomRotation())}deg`,
                     zIndex: 1,
@@ -32,9 +32,9 @@ export default function ProjectsRow(){
                         spy={true} 
                         smooth={true}
                         duration={500}
-                        className="flex flex-col w-full p-4 justify-between overflow-hidden"
+                        className="flex flex-row md:flex-col flex-wrap w-full p-4 justify-between overflow-hidden"
                         >
-                            <img src="/Agon/Logo.svg" alt="Agon app" className="w-2/3"/>
+                            <img src="/Agon/Logo.svg" alt="Agon app" className="w-16 md:w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Fitness</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">App</div>
@@ -45,7 +45,7 @@ export default function ProjectsRow(){
                 </motion.div>
 
                 <motion.div 
-                className="flex flex-auto w-1/5 rounded-2xl bg-white h-64 cursor-pointer"
+                className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 rounded-2xl cursor-pointer bg-white"
                 initial={{ 
                     rotate: `${String(getRandomRotation())}deg`,
                     zIndex: 1,
@@ -62,9 +62,9 @@ export default function ProjectsRow(){
                         spy={true} 
                         smooth={true}
                         duration={500}
-                        className="flex flex-col w-full p-4 justify-between"
+                        className="flex flex-row md:flex-col flex-wrap w-full p-4 justify-between overflow-hidden"
                         >
-                            <img src="/30Birds/logo.svg" alt="30 Birds" className="w-2/3"/>
+                            <img src="/30Birds/logo.svg" alt="30 Birds" className="w-16 md:w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">SaaS</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">HR-tech</div>
@@ -74,7 +74,7 @@ export default function ProjectsRow(){
                 </motion.div>
 
                 <motion.div 
-                className="flex flex-auto w-1/5 rounded-2xl bg-white h-64 cursor-pointer"
+                className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 rounded-2xl cursor-pointer bg-white"
                 initial={{ 
                     rotate: `${String(getRandomRotation())}deg`,
                     zIndex: 1,
@@ -91,9 +91,9 @@ export default function ProjectsRow(){
                         spy={true} 
                         smooth={true}
                         duration={500}
-                        className="flex flex-col w-full p-4 justify-between"
+                        className="flex flex-row md:flex-col flex-wrap w-full p-4 justify-between overflow-hidden"
                         >
-                            <img src="/Barter/Logo.svg" alt="Barter logo" className="w-2/3"/>
+                            <img src="/Barter/Logo.svg" alt="Barter logo" className="w-16 md:w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Web3</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Infrastructure</div>
@@ -103,7 +103,7 @@ export default function ProjectsRow(){
                 </motion.div>
 
                 <motion.div 
-                className="flex flex-auto w-1/5 rounded-2xl bg-white h-64 cursor-pointer"
+                className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 rounded-2xl cursor-pointer bg-white"
                 initial={{ 
                     rotate: `${String(getRandomRotation())}deg`,
                     zIndex: 1,
@@ -120,9 +120,9 @@ export default function ProjectsRow(){
                         spy={true} 
                         smooth={true}
                         duration={500}
-                        className="flex flex-col w-full p-4 justify-between"
+                        className="flex flex-row md:flex-col flex-wrap w-full p-4 justify-between overflow-hidden"
                         >
-                            <img src="/Yango/logo.svg" alt="Yango logo" className="w-2/3"/>
+                            <img src="/Yango/logo.svg" alt="Yango logo" className="w-16 md:w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Taxi</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Delivery</div>

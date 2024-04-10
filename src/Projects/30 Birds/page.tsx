@@ -55,7 +55,7 @@ export default function ThirtyBirdsBlock() {
 
 
              <div className="flex w-full justify-center pt-10 pb-10">
-                <div className='flex flex-col gap-8 w-2/4 text-sm font-mono'>
+                <div className='flex flex-col gap-8 w-full md:w-2/4 text-sm font-mono'>
                 <p>
                 30 Birds was born from the idea that we often underappreciate each other in the work environment, and that genuine appreciation holds more significance than mere points on a CV. Positive feedback has the power to engage everyone in a team more effectively than any KPI.
                 </p>
@@ -65,9 +65,9 @@ export default function ThirtyBirdsBlock() {
                 <p>
                 The concept of origami birds, suggested by a designer friend I incorporate into the product in various forms, from instruction-like illustrations to paper-like UI elements. And, of course, actual birds for praises.    
                 </p>
-                <p>
+                {/* <p>
                 Collaborating with founders and clients, we defined the main user cases and sought to understand how to establish a continuous feedback loop that could transform traditional 360-degree reviews, and how users could carry this feedback culture with them to new environments.
-                </p> 
+                </p>  */}
                 </div>
              </div>
 
@@ -108,7 +108,7 @@ export default function ThirtyBirdsBlock() {
                     alt="Popup with award for skills" 
                     width={1280} 
                     height={720} 
-                    className="flex-3 w-1/2 h-auto rounded-xl "
+                    className="flex-3 w-full md:w-1/2 h-auto rounded-xl "
                     whileHover={{
                         scale: 1.1,
                         rotate: 0,
@@ -116,6 +116,13 @@ export default function ThirtyBirdsBlock() {
                       }}
                       whileTap={{scale:1.5}}/>
 
+                </div>
+                <div className="flex w-full justify-center pt-10 pb-10">
+                <div className='flex flex-col gap-8 w-full md:w-2/4 text-sm font-mono'>
+                <p>
+                The concept of origami birds, suggested by a designer friend I incorporate into the product in various forms, from instruction-like illustrations to paper-like UI elements. And, of course, actual birds for praises.    
+                </p>
+                </div>
                 </div>
 
                 <div className="flex flex-row flex-wrap items-center w-full h-auto pt-10 pb-10">
@@ -170,13 +177,13 @@ export default function ThirtyBirdsBlock() {
                 </div>
 
 
-             <div className="flex flex-row-reverse w-full h-auto pt-20 pb-10 gap-8 font-mono text-sm">
+             <div className="flex flex-row-reverse flex-wrap w-full h-auto pt-20 pb-10 gap-8 font-mono text-sm">
                     {/* <div className='h-80 w-full bg-slate-900'><p>main screen of 30birds</p> </div> */}
                     <motion.img src="/30Birds/company_view.webp" 
                     alt="30Birds" 
                     width={1280} 
                     height={720} 
-                    className="w-2/3 h-auto flex-1 rounded-xl shadowblock"
+                    className="md:w-2/3 h-auto flex-1 rounded-xl shadowblock"
                     whileHover={{
                         scale: 1.1,
                         zIndex: 10,

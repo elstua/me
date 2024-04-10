@@ -20,7 +20,7 @@ export default function BarterBlock() {
             />
 
 
-             <div className="flex w-2/3 h-auto pt-20 pb-10">
+             <div className="flex w-full md:w-2/3 h-auto pt-20 pb-10">
                 <div className='w-full font-mono text-sm text-neutral-900'>
                 <p>
                 Barter is an intent based swap tool that saves money. Founders asked me to find a design language, create branding and explore the way to make a B2C part of product — exchange platform.
@@ -55,8 +55,8 @@ export default function BarterBlock() {
             </motion.div>
 
               {/* flow block */}
-            <div className="flex w-full h-auto justify-around pt-10 pb-10 gap-8">
-                <motion.div className='browserwindow w-1/2'
+            <div className="flex flex-wrap flex-row w-full h-auto justify-around pt-10 pb-10 gap-8">
+                <motion.div className='browserwindow w-full w-45'
                 whileHover={{
                     scale: 1.1,
                     zIndex: 10,
@@ -80,8 +80,10 @@ export default function BarterBlock() {
                 </motion.div>
                 
                 <motion.div 
-                    className='h-full phone-block'
-                    initial={{ rotate: getRandomRotation() }}
+                    className='flex h-full '
+                    initial={{ rotate: getRandomRotation(),
+                        scale: 1,
+                    }}
                     whileHover={{
                         scale: 1.1,
                         zIndex: 10,

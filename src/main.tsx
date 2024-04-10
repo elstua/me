@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function FirstScreen() {
     return (
-      <main className="flex mainblock-height flex-col items-center justify-between pt-24" id="main">
+      <main className="flex mainblock-height w-full flex-col items-center justify-between pt-8 md:pt-16 sm:pl-0 sm:pr-0" id="main">
         <div className="content-width flex-col items-left font-mono text-sm text-neutral-900 lg:flex">
           <div className='flex flex-row items-center gap-2 pb-10'>
             <h1>Hi, I'm Artem Savelev!</h1>
@@ -25,13 +25,13 @@ export default function FirstScreen() {
           whileTap={{ scale: 2 }}
             />
           </div>
-          <p className='w-1/2'>
+          <p className='md:w-2/3 w-full'>
           Over the past nine years, my work title has been Product Designer.
           From seed-stage startups to large corporations, I have explored ways to create holistic experiences.</p>
-          <p className='w-1/2 pt-6'>
+          <p className='md:w-2/3 w-full pt-6'>
           I believe that software can tell a story. It can provide users with a new perspective on everyday life and offer teams a journey of decisions and ideas that evolve into something greater.
           </p>
-          <p className='w-1/2 pt-6'>
+          <p className='md:w-2/3 w-full pt-6'>
           I am currently open to new opportunities and would love to collaborate on something significant and exciting with you. Let's chat!
           </p>
           <ul className="flex flex-col w-full pt-4 pb-10 gap-4">

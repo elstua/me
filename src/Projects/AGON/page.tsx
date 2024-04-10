@@ -21,7 +21,18 @@ export default function AgonBlock() {
                     link="https://apps.apple.com/pt/app/agon-fitness-rewards/id1574023421?l=en-GB"
                     linkText="App at Appstore" />
 
-                <div className="flex justify-around w-full h-auto pt-32 pb-10">
+
+                    <div className='md:hidden flex-col justify-center gap-8 flex-2 w-full font-mono text-sm text-neutral-900'>
+                    <p>Agon hosts fitness challenges in which users actively participate. 
+                        Using machine vision technology, exercises are tracked and counted, earning users points and advancing them towards prizes.
+                        All within the vibe of a cyberpunk fitness center.</p>
+
+                        <p>Our team acquired Agon from friends and successfully relaunched it. 
+                        I led the redesign of primary user flows, crafted a new UX for challenges, and enhanced the visual language.
+                        Additionally, I designed marketing materials and socials </p>
+                    </div>
+
+                <div className="flex flex-wrap md:flex-nowrap justify-around w-full h-auto pt-32 pb-10">
                     <motion.div 
                     className='h-full phone-block'
                     initial={{ 
@@ -46,7 +57,7 @@ export default function AgonBlock() {
                     />
                     </motion.div>
 
-                    <div className='flex flex-col justify-center gap-8 flex-2  max-w-64 font-mono text-sm text-neutral-900'>
+                    <div className='md:flex hidden flex-col justify-center gap-8 flex-2  max-w-64 font-mono text-sm text-neutral-900'>
                     <p>Agon hosts fitness challenges in which users actively participate. 
                         Using machine vision technology, exercises are tracked and counted, earning users points and advancing them towards prizes.
                         All within the vibe of a cyberpunk fitness center.</p>
@@ -186,7 +197,7 @@ export default function AgonBlock() {
                 </div>
 
 
-                <div className="flex justify-around w-full pt-10 pb-10 place-content-center">
+                <div className="flex flex-wrap justify-around w-full pt-10 pb-10 place-content-center">
                 <motion.div 
                     className='h-full phone-block'
                     style={{ marginTop: '80px'}}
@@ -235,7 +246,7 @@ export default function AgonBlock() {
                 </div>
 
                 {/* onboarding block */}
-                <div className="flex justify-around w-full pt-10 pb-10 place-content-center">
+                <div className="flex flex-wrap justify-around w-full pt-10 pb-10 place-content-center">
                     <motion.div 
                         className='h-full phone-block'
                         initial={{ 

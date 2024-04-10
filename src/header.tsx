@@ -27,7 +27,7 @@ export function HeaderNav(){
             {links.map((link, index) => (
                 <Link
                     className="flex flex-1 justify-center content-center items-center align-middle
-                    rounded-full font-mono text-sm h-12 text-black cursor-pointer
+                    rounded-full font-mono text-sm md:h-12 text-black cursor-pointer
                     transition-all ease-in-out headernav
                     duration-300 ..."
                     activeClass="font-extrabold"
@@ -100,14 +100,14 @@ export default function Header(){
     }, []);
 
     return (
-            <header className= "flex flex-col items-center fixed top-0 left-0 right-0 z-30 pl-32 pr-32 pt-4 min-h-18">
+            <header className= "flex flex-col items-center fixed top-0 left-0 right-0 z-30 pl-1 pr-1  pt-4 min-h-18">
             <div 
             className={` header-width items-between flex-row h-20`}>
                 <motion.div className={`flex justify-between w-full flex-row rounded-full backdrop-blur-lg ${showNav ? "showNav" : "hideNav"}`}
                 style={{ backgroundColor: headerColor, padding: padding, filter: blur}}
                 >
                 <Link
-                    className="flex p-4 justify-center content-center items-center align-middle
+                    className="hidden md:flex md:p-4 justify-center content-center items-center align-middle
                     rounded-full font-mono text-sm h-12 text-black cursor-pointer
                     transition-all ease-in-out
                     headernav duration-300 ..."
@@ -119,12 +119,27 @@ export default function Header(){
                 >
                     Artem Savelev
                 </Link>
-                <div className={`flex flex-row w-2/4 content-between ${showProjectNav ? "show" : "hide"}`}>
+                <Link
+                    className="md:hidden flex md:p-4 justify-center content-center items-center align-middle
+                    rounded-full font-mono text-sm h-12 text-black cursor-pointer
+                    transition-all ease-in-out
+                    headernav duration-300 ..."
+                    activeClass="font-extrabold decoration-solid"
+                    to={"main"}
+                    smooth={true} 
+                    duration={400}
+                    offset={-300}
+                >
+                    Stua
+                </Link>
+
+                <div className={`flex flex-row w-full sm:w-2/4 content-between ${showProjectNav ? "show" : "hide"}`}>
                     <HeaderNav />
                 </div>
+
                 <a
                     href="mailto:stua@fastmail.com"
-                    className="flex p-4 justify-center content-center items-center align-middle
+                    className="hidden md:flex md:p-4 justify-center content-center items-center align-middle
                     rounded-full font-mono text-sm h-12 text-black cursor-pointer
                     transition-all ease-in-out
                     headernav duration-300 ..."
