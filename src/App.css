@@ -100,3 +100,9 @@
 .birds-bg{
   background-color: #22242D;
 }
+
+.picture {
+  border-width: 10px;
+  border-color: white;
+
+}

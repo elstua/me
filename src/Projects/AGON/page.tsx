@@ -32,7 +32,7 @@ export default function AgonBlock() {
                         Additionally, I designed marketing materials and socials </p>
                     </div>
 
-                <div className="flex flex-wrap md:flex-nowrap justify-around w-full h-auto pt-32 pb-10">
+                <div className="flex flex-wrap md:flex-nowrap justify-around w-full h-auto pt-10 pb-10">
                     <motion.div 
                     className='h-full phone-block'
                     initial={{ 
@@ -57,7 +57,7 @@ export default function AgonBlock() {
                     />
                     </motion.div>
 
-                    <div className='md:flex hidden flex-col justify-center gap-8 flex-2  max-w-64 font-mono text-sm text-neutral-900'>
+                    <div className='md:flex hidden flex-col justify-center pl-2 pb-2 gap-8 flex-2  max-w-64 font-mono text-sm text-neutral-900'>
                     <p>Agon hosts fitness challenges in which users actively participate. 
                         Using machine vision technology, exercises are tracked and counted, earning users points and advancing them towards prizes.
                         All within the vibe of a cyberpunk fitness center.</p>

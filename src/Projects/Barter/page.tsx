@@ -137,9 +137,9 @@ export default function BarterBlock() {
 
                     <motion.img src="/Barter/algorithm.webp" 
                         alt="30Birds" 
-                        className="flex-3 w-45 h-auto rounded-xl" 
+                        className="flex-3 w-45 h-auto rounded-xl picture" 
                         initial={{ 
-                            // rotate: `${String(getRandomRotation())}deg`,
+                            rotate: `${String(getRandomRotation())}deg`,
                             zIndex: 1,
                             scale: 1,
                         }} 
@@ -153,9 +153,9 @@ export default function BarterBlock() {
                         />
                     <motion.img src="/Barter/transformation.webp" 
                         alt="30Birds" 
-                        className="flex-3 w-45 h-auto rounded-xl" 
+                        className="flex-3 w-45 h-auto rounded-xl picture" 
                         initial={{ 
-                            // rotate: `${String(getRandomRotation())}deg`,
+                            rotate: `${String(getRandomRotation())}deg`,
                             zIndex: 1,
                             scale: 1,
                         }} 
@@ -169,9 +169,9 @@ export default function BarterBlock() {
                         />
                     <motion.img src="/Barter/types.webp" 
                         alt="Barter graphic for deck" 
-                        className="flex-3 w-45 h-auto rounded-xl" 
+                        className="flex-3 w-45 h-auto rounded-xl picture" 
                         initial={{ 
-                            // rotate: `${String(getRandomRotation())}deg`,
+                            rotate: `${String(getRandomRotation())}deg`,
                             zIndex: 1,
                             scale: 1,
                         }} 
@@ -185,9 +185,9 @@ export default function BarterBlock() {
                     />
                     <motion.img src="/Barter/multiverse.webp" 
                         alt="30Birds" 
-                        className="flex-3 w-45 h-auto rounded-xl" 
+                        className="flex-3 w-45 h-auto rounded-xl picture" 
                         initial={{ 
-                            // rotate: `${String(getRandomRotation())}deg`,
+                            rotate: `${String(getRandomRotation())}deg`,
                             zIndex: 1,
                             scale: 1,
                         }} 
