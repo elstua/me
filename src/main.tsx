@@ -27,12 +27,12 @@ export default function FirstScreen() {
           </div>
           <p className='md:w-2/3 w-full'>
           Over the past nine years, my work title has been Product Designer.
-          From seed-stage startups to large corporations, I have explored ways to create holistic experiences.</p>
+          From seed-stage startups to large corporations, I have explored ways to design holistic experiences.</p>
           <p className='md:w-2/3 w-full pt-6'>
-          I believe that software can tell a story. It can provide users with a new perspective on everyday life and offer teams a journey of decisions and ideas that evolve into something greater.
+          I believe that software can tell a story. It can provide users with a new perspective on everyday life. It offer teams a journey of decisions and ideas that evolve into greateness.
           </p>
           <p className='md:w-2/3 w-full pt-6'>
-          I am currently open to new opportunities and would love to collaborate on something significant and exciting with you. Let's chat!
+          I am currently open to new opportunities and would love to collaborate with you. Let's chat!
           </p>
           <ul className="flex flex-col w-full pt-4 pb-10 gap-4">
           <li className='flex flex-row gap-2'><p className='opacity-50'>Mail</p> <a href="mailto:stua@fastmail.com" className='no-underline hover:underline'>stua@fastmail.com</a></li>
@@ -45,7 +45,11 @@ export default function FirstScreen() {
           </li>
           <li className='flex flex-row gap-2'><p className='opacity-50'>Social</p> 
           <a href="https://twitter.com/s_tu_a" target="_blank" rel="noopener noreferrer" 
-          className='no-underline hover:underline'>Twitter ↗︎</a></li>
+          className='no-underline hover:underline'>Twitter ↗︎</a>
+          <p>,</p>
+          <a href="https://posts.cv/stua" target="_blank" rel="noopener noreferrer" 
+          className='no-underline hover:underline'>Posts ↗︎</a>
+          </li>
           <li className='flex flex-row gap-2'><p className='opacity-50'>City</p><p>Lisbon</p></li>
           </ul>
         </div>
