@@ -143,8 +143,8 @@ export default function BarterBlock() {
                     <Image src="/Barter/types.webp" 
                         alt="Barter graphic for deck" 
                         layoutId='types'/>
-                    <Image src="/Barter/multiverse.webp" 
-                        alt="30Birds" layoutId='multiverse'/>                        
+                    <Image src="/Barter/barter-field.webp" 
+                        alt="30Birds" layoutId='multiverse of crypto'/>                        
                     
                 </div>
         </div>
