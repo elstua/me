@@ -10,6 +10,7 @@ import BarterBlock from "./Projects/Barter/page.tsx";
 import Yango from "./Projects/Yango/page.tsx";
 import { Element } from "react-scroll";
 import Footer from "./footer.tsx";
+import Image from "./imageExpand";
 
 
 
@@ -18,6 +19,7 @@ function App() {
     <body>
       <Header />
       <FirstScreen />
+      {/* <Image src="/Barter/multiverse.webp"/> */}
       <ProjectsRow />
       <Element name="agon" ><AgonBlock /></Element>
       <Element name="30birds" ><ThirtyBirdsBlock /></Element>

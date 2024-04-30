@@ -27,9 +27,9 @@ export default function AgonBlock() {
                         Using machine vision technology, exercises are tracked and counted, earning users points and advancing them towards prizes.
                         All within the vibe of a cyberpunk fitness center.</p>
 
-                        <p>Our team acquired Agon from friends and successfully relaunched it. 
+                        {/* <p>Our team acquired Agon from friends and successfully relaunched it. 
                         I led the redesign of primary user flows, crafted a new UX for challenges, and enhanced the visual language.
-                        Additionally, I designed marketing materials and socials </p>
+                        Additionally, I designed marketing materials and socials </p> */}
                     </div>
 
                 <div className="flex flex-wrap md:flex-nowrap justify-around w-full h-auto pt-10 pb-10">
@@ -62,9 +62,9 @@ export default function AgonBlock() {
                         Using machine vision technology, exercises are tracked and counted, earning users points and advancing them towards prizes.
                         All within the vibe of a cyberpunk fitness center.</p>
 
-                        <p>Our team acquired Agon from friends and successfully relaunched it. 
+                        {/* <p>Our team acquired Agon from friends and successfully relaunched it. 
                         I led the redesign of primary user flows, crafted a new UX for challenges, and enhanced the visual language.
-                        Additionally, I designed marketing materials and socials </p>
+                        Additionally, I designed marketing materials and socials </p> */}
                     </div>
 
                     <motion.div 

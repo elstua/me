@@ -62,9 +62,9 @@ export default function ThirtyBirdsBlock() {
                 <p>
                 Started from a simple Slack bot for sending 'birds' I led the team in designing a web suite around these ideas and developed the right brand identity for it.
                 </p>
-                <p>
+                {/* <p>
                 The concept of origami birds, suggested by a designer friend I incorporate into the product in various forms, from instruction-like illustrations to paper-like UI elements. And, of course, actual birds for praises.    
-                </p>
+                </p> */}
                 {/* <p>
                 Collaborating with founders and clients, we defined the main user cases and sought to understand how to establish a continuous feedback loop that could transform traditional 360-degree reviews, and how users could carry this feedback culture with them to new environments.
                 </p>  */}
@@ -118,11 +118,11 @@ export default function ThirtyBirdsBlock() {
 
                 </div>
                 <div className="flex w-full justify-center pt-10 pb-10">
-                <div className='flex flex-col gap-8 w-full md:w-2/4 text-sm font-mono'>
+                {/* <div className='flex flex-col gap-8 w-full md:w-2/4 text-sm font-mono'>
                 <p>
                 The concept of origami birds, suggested by a designer friend I incorporate into the product in various forms, from instruction-like illustrations to paper-like UI elements. And, of course, actual birds for praises.    
                 </p>
-                </div>
+                </div> */}
                 </div>
 
                 <div className="flex flex-row flex-wrap items-center w-full h-auto pt-10 pb-10">

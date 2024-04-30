@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectHeader from '../../projectheader';
 import ReactPlayer from 'react-player';
 import { motion } from 'framer-motion';
+import Image from '../../imageExpand';
 
 export default function BarterBlock() {
     const getRandomRotation = () => {
@@ -135,70 +136,15 @@ export default function BarterBlock() {
             
             <div className="flex flex-row flex-wrap justify-around w-full h-auto pt-10 pb-10 gap-4">
 
-                    <motion.img src="/Barter/algorithm.webp" 
-                        alt="30Birds" 
-                        className="flex-3 w-45 h-auto rounded-xl picture" 
-                        initial={{ 
-                            rotate: `${String(getRandomRotation())}deg`,
-                            zIndex: 1,
-                            scale: 1,
-                        }} 
-                        whileHover={{
-                            scale: 1.2,
-                            zIndex: 10,
-                            rotate: 0,
-                            transition: { duration: 0.3 },
-                        }}
-                        whileTap={{ scale: 2 }}
-                        />
-                    <motion.img src="/Barter/transformation.webp" 
-                        alt="30Birds" 
-                        className="flex-3 w-45 h-auto rounded-xl picture" 
-                        initial={{ 
-                            rotate: `${String(getRandomRotation())}deg`,
-                            zIndex: 1,
-                            scale: 1,
-                        }} 
-                        whileHover={{
-                            scale: 1.2,
-                            zIndex: 10,
-                            rotate: 0,
-                            transition: { duration: 0.3 },
-                        }}
-                        whileTap={{ scale: 2 }}
-                        />
-                    <motion.img src="/Barter/types.webp" 
+                    <Image src="/Barter/algorithm.webp" 
+                        alt="30Birds" layoutId='algorithm'/>
+                    <Image src="/Barter/transformation.webp" 
+                        alt="30Birds" layoutId='transformation'/>
+                    <Image src="/Barter/types.webp" 
                         alt="Barter graphic for deck" 
-                        className="flex-3 w-45 h-auto rounded-xl picture" 
-                        initial={{ 
-                            rotate: `${String(getRandomRotation())}deg`,
-                            zIndex: 1,
-                            scale: 1,
-                        }} 
-                        whileHover={{
-                            scale: 1.2,
-                            zIndex: 10,
-                            rotate: 0,
-                            transition: { duration: 0.3 },
-                        }}
-                        whileTap={{ scale: 2 }}
-                    />
-                    <motion.img src="/Barter/multiverse.webp" 
-                        alt="30Birds" 
-                        className="flex-3 w-45 h-auto rounded-xl picture" 
-                        initial={{ 
-                            rotate: `${String(getRandomRotation())}deg`,
-                            zIndex: 1,
-                            scale: 1,
-                        }} 
-                        whileHover={{
-                            scale: 1.2,
-                            zIndex: 10,
-                            rotate: 0,
-                            transition: { duration: 0.3 },
-                        }}
-                        whileTap={{ scale: 2 }}
-                    />
+                        layoutId='types'/>
+                    <Image src="/Barter/multiverse.webp" 
+                        alt="30Birds" layoutId='multiverse'/>                        
                     
                 </div>
         </div>

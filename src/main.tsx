@@ -13,12 +13,12 @@ export default function FirstScreen() {
             alt="my avatar should be there"
             className='rounded-full w-8 h-8'
             initial={{ 
-              zIndex: 1,
+              zIndex: 0,
               scale: 1,
           }} 
           whileHover={{
               scale: 2,
-              zIndex: 10,
+              zIndex: 1,
               rotate: 0,
               transition: { duration: 0.3 },
           }}
@@ -32,7 +32,7 @@ export default function FirstScreen() {
           I believe that software can tell a story. It can provide users with a new perspective on everyday life. It offer teams a journey of decisions and ideas that evolve into greateness.
           </p>
           <p className='md:w-2/3 w-full pt-6'>
-          I am currently open to new opportunities and would love to collaborate with you. Let's chat!
+          I am currently in search for new opportunities and would love to collaborate with you. Let's chat!
           </p>
           <ul className="flex flex-col w-full pt-4 pb-10 gap-4">
           <li className='flex flex-row gap-2'><p className='opacity-50'>Mail</p> <a href="mailto:stua@fastmail.com" className='no-underline hover:underline'>stua@fastmail.com</a></li>
