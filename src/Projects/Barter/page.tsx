@@ -134,7 +134,7 @@ export default function BarterBlock() {
                      <p>A couple of images from pitchdeck and social media</p>
             </div>
             
-            <div className="flex flex-row flex-wrap justify-around w-full h-auto pt-10 pb-10 gap-2">
+            <div className="flex flex-row flex-wrap justify-around w-full h-auto pt-10 pb-10 gap-1">
 
                     <Image src="/Barter/algorithm.webp" 
                         alt="30Birds" layoutId='algorithm'/>
