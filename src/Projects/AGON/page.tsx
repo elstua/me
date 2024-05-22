@@ -3,7 +3,6 @@ import ReactPlayer from 'react-player'
 import ProjectHeader from "../../projectheader";
 import { motion } from "framer-motion";
 
-
 export default function AgonBlock() {
     const getRandomRotation = () => {
         return Math.floor(Math.random() * 10) - 4; // Generate a random number between -4 and 4

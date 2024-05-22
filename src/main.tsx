@@ -31,6 +31,7 @@ export default function FirstScreen() {
           <p className='md:w-2/3 w-full pt-6'>
           I believe that software can tell a story. It can provide users with a new perspective on everyday life. It offer teams a journey of decisions and ideas that evolve into greateness.
           </p>
+          
           <p className='md:w-2/3 w-full pt-6'>
           I am currently in search for new opportunities and would love to collaborate with you. Let's chat!
           </p>
