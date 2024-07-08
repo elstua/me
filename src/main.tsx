@@ -33,7 +33,7 @@ export default function FirstScreen() {
           </p>
           
           <p className='md:w-2/3 w-full pt-6'>
-          I am currently in search for new opportunities and would love to collaborate with you. Let's chat!
+          I am currently looking for a new project and would love to collaborate with you. Let's chat!
           </p>
           <ul className="flex flex-col w-full pt-4 pb-10 gap-4">
           <li className='flex flex-row gap-2'><p className='opacity-50'>Mail</p> <a href="mailto:stua@fastmail.com" className='no-underline hover:underline'>stua@fastmail.com</a></li>

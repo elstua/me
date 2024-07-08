@@ -9,6 +9,7 @@ export default function AgonBlock() {
     };
 
 
+
     return (
         <div id="agon" className="flex flex-col items-center w-full">
             <div className="content-width flex flex-col items-center justify-between">

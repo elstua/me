@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
             <div className="content-width pt-20 pb-20 flex flex-row items-left justify-between font-mono text-sm text-neutral-900">
                 <div className='flex flex-col items-start w-2/5'>
                 <p className=''>That's all for now! Thanks for scrolling ♥︎</p>
-                <p className='opacity-50'> I continue to develop and add things (that we developed together)</p>
+                <p className='opacity-50'> I continue to develop and add things there</p>
                 </div>
 
                 <div className='flex flex-col items-end'>

@@ -11,8 +11,6 @@ import Yango from "./Projects/Yango/page.tsx";
 import { Element } from "react-scroll";
 import Footer from "./footer.tsx";
 
-
-
 function App() {
   return (
     <body>
