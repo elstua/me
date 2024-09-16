@@ -233,6 +233,32 @@ export default function AgonBlock() {
                             rotate: 0,
                             transition: { duration: 0.3 },
                         }}
+                        whileTap={{
+                            scale: 1.5,
+                        }}
+                    >
+                    <ReactPlayer
+                        url="/Agon/onboarding.webm"
+                        playing={true}
+                        controls={true}
+                        loop={true}
+                        alt="Agon"
+                        width={220}
+                        height={"auto"}
+                        style={{ borderRadius: '24px', overflow: 'hidden'}}
+                    />
+                    </motion.div>
+                    <motion.div 
+                        className='h-full phone-block'
+                        initial={{ 
+                            rotate: `${String(getRandomRotation())}deg`,
+                            scale: 1,
+                        }} 
+                        whileHover={{
+                            scale: 1.1,
+                            rotate: 0,
+                            transition: { duration: 0.3 },
+                        }}
                         whileTap={{ scale: 1.5}}
                     >
                     <img
@@ -246,7 +272,7 @@ export default function AgonBlock() {
                 </div>
 
                 {/* onboarding block */}
-                <div className="flex flex-wrap justify-around w-full pt-10 pb-10 place-content-center">
+                {/* <div className="flex flex-wrap justify-around w-full pt-10 pb-10 place-content-center">
                     <motion.div 
                         className='h-full phone-block'
                         initial={{ 
@@ -297,7 +323,7 @@ export default function AgonBlock() {
                         className="h-full screen-block"
                     />
                     </motion.div>
-                </div>
+                </div> */}
 
                 {/* Marketing block */}
                 {/* <div className='flex flex-row w-full gap-3'>

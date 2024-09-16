@@ -3,9 +3,6 @@ import "./App.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-// зачем мне нужна для этого функция с открытием когда я могу сделать то же самое с помощью вариантов?
-
-
 interface ImageProps {
   src: string;
   alt: string;

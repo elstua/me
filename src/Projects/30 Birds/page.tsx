@@ -57,10 +57,10 @@ export default function ThirtyBirdsBlock() {
              <div className="flex w-full justify-center pt-10 pb-10">
                 <div className='flex flex-col gap-8 w-full md:w-2/4 text-sm font-mono'>
                 <p>
-                30 Birds was born from the idea that we often underappreciate each other in the work environment, and that genuine appreciation holds more significance than mere points on a CV. Positive feedback has the power to engage everyone in a team more effectively than any KPI.
+                30 Birds was born from the idea that we often underappreciate each other in the work environment, and that genuine appreciation holds more significance than mere points on a CV or KPI.
                 </p>
                 <p>
-                Started from a simple Slack bot for sending 'birds' I led the team in designing a web suite around these ideas and developed the right brand identity for it.
+                Started from a simple Slack bot for sending 'birds' I led the team in designing a web suite around these ideas that bring +40% more sent praises.
                 </p>
                 {/* <p>
                 The concept of origami birds, suggested by a designer friend I incorporate into the product in various forms, from instruction-like illustrations to paper-like UI elements. And, of course, actual birds for praises.    
