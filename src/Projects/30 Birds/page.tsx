@@ -54,8 +54,8 @@ export default function ThirtyBirdsBlock() {
                      </div>
 
 
-             <div className="flex w-full justify-center pt-10 pb-10">
-                <div className='flex flex-col gap-8 w-full md:w-2/4 text-sm font-mono'>
+             <div className="flex w-full justify-left pt-10 pb-10">
+                <div className='flex flex-col gap-8 w-1/2 md:w-2/4 text-sm font-mono'>
                 <p>
                 30 Birds was born from the idea that we often underappreciate each other in the work environment, and that genuine appreciation holds more significance than mere points on a CV or KPI.
                 </p>

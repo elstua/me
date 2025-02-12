@@ -12,7 +12,7 @@ export default function AgonBlock() {
 
     return (
         <div id="agon" className="flex flex-col items-center w-full">
-            <div className="content-width flex flex-col items-center justify-between">
+            <div className="content-width flex flex-col items-left justify-between">
                 <ProjectHeader
                     name="Agon"
                     startDate={2023}
@@ -22,7 +22,7 @@ export default function AgonBlock() {
                     linkText="App at Appstore" />
 
 
-                    <div className='md:hidden flex-col justify-center gap-8 flex-2 w-full font-mono text-sm text-neutral-900'>
+                    <div className='md flex-col w-1/2 justify-left gap-8 pt-8 pb-8 flex-2 font-mono text-sm text-neutral-900'>
                     <p>Agon hosts fitness challenges in which users actively participate. 
                         Using machine vision technology, exercises are tracked and counted, earning users points and advancing them towards prizes.
                         All within the vibe of a cyberpunk fitness center.</p>
@@ -56,16 +56,6 @@ export default function AgonBlock() {
                         className="h-full screen-block"
                     />
                     </motion.div>
-
-                    <div className='md:flex hidden flex-col justify-center pl-2 pb-2 gap-8 flex-2  max-w-64 font-mono text-sm text-neutral-900'>
-                    <p>Agon hosts fitness challenges in which users actively participate. 
-                        Using machine vision technology, exercises are tracked and counted, earning users points and advancing them towards prizes.
-                        All within the vibe of a cyberpunk fitness center.</p>
-
-                        {/* <p>Our team acquired Agon from friends and successfully relaunched it. 
-                        I led the redesign of primary user flows, crafted a new UX for challenges, and enhanced the visual language.
-                        Additionally, I designed marketing materials and socials </p> */}
-                    </div>
 
                     <motion.div 
                     className='h-full phone-block'
@@ -192,7 +182,7 @@ export default function AgonBlock() {
                       whileTap={{ scale: 1.5,
                         zIndex: 10,
                       }}/>
-                     <p className="font-mono text-sm">different states of active challenges in feed</p>
+                     {/* <p className="font-mono text-sm">different states of active challenges in feed</p> */}
                     </div>
                 </div>
 
