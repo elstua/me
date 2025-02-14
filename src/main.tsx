@@ -36,7 +36,7 @@ export default function FirstScreen() {
           I am currently looking for a new project and would love to collaborate with you. Let's chat!
           </p>
           <ul className="flex flex-col w-full pt-4 pb-10 gap-4">
-          <li className='flex flex-row gap-2'><p className='opacity-50'>Mail</p> <a href="mailto:stua@fastmail.com" className='no-underline hover:underline'>stua@fastmail.com</a></li>
+          {/* <li className='flex flex-row gap-2'><p className='opacity-50'>Let's connect</p> <a href="mailto:stua@fastmail.com" className='no-underline hover:underline'>stua@fastmail.com</a></li> */}
           <li className='flex flex-row gap-2'><p className='opacity-50'>Experience</p> 
             <a href="https://read.cv/stua" target="_blank" rel="noopener noreferrer" 
             className='no-underline hover:underline'>Read.cv ↗︎</a>
@@ -53,6 +53,45 @@ export default function FirstScreen() {
           </li>
           <li className='flex flex-row gap-2'><p className='opacity-50'>City</p><p>Lisbon</p></li>
           </ul>
+
+
+          <motion.button
+          onClick={() => window.location.href = "mailto:stua@fastmail.com"}
+          className='rounded-2xl md:w-1/2 lg:w-1/4 px-2 py-2 no-underline border border-neutral-700 overflow-hidden relative'
+          initial="initial"
+          whileHover="hover"
+          animate="initial"
+          variants={{
+            initial: {
+              background: "#ffffff00"
+            },
+            hover: {
+              background: "#ffffff",
+              transition: { duration: 0.3 }
+            }
+          }}
+          >
+            <motion.div
+              variants={{
+                initial: { y: 0 },
+                hover: { y: -30 }
+              }}
+              transition={{ duration: 0.3 }}
+            >
+              Let's work together
+            </motion.div>
+            <motion.div
+              className="absolute w-full left-0"
+              variants={{
+                initial: { y: 30 },
+                hover: { y: -20 }
+              }}
+              transition={{ duration: 0.3 }}
+            >
+              stua@fastmail.com
+            </motion.div>
+          </motion.button>
+          
         </div>
       </main>
     );
