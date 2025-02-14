@@ -43,7 +43,7 @@ return (
               }}>
             <ReactPlayer
                 url="/Agon/exercise_small.webm"
-                controls={false}
+                controls={true}
                 playing={true}
                 autoPlay={true}
                 loop={true}
