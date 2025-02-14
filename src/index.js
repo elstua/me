@@ -11,11 +11,9 @@ import { Analytics } from "@vercel/analytics/react"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <html lang="en">
     <SpeedInsights/>
     <Analytics/>
     <App />
-    </html>
   </React.StrictMode>
 );
 

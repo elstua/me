@@ -1,23 +1,25 @@
 .header-width {
-  width: 900px;
+  width: 100%;
+  max-width: 1200px;
 }
 .content-width {
-  width: 800px;
+  max-width: 1200px;
+  width: 100%;
 }
 .mainblock-height{
   height: 80svh;
 }
 
+
 @media screen and (max-width: 900px) {
   .header-width {
-    width: 100%;
     padding-left: 10px;
     padding-right: 10px ;
   }
   .content-width{
     width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .w-45{
     width: 100%;
@@ -34,7 +36,7 @@
   }  
 }
 
-@media screen and (m-width: 720px) {.mainblock-height{
+@media screen and (max-width: 720px) {.mainblock-height{
   height: 90svh;
 }
 }
@@ -63,7 +65,7 @@
   top: -1.8%;
   left: -5%;
   width: 109.6%;
-  height: 104%;
+  height: 106%;
 }
 .screen-block {
   border-radius: 8%;

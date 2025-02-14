@@ -1,0 +1,66 @@
+import React from "react";
+import ReactPlayer from 'react-player'
+import { motion, useScroll, useTransform } from "framer-motion";
+
+export default function AgonBlock1() {
+    const { scrollY } = useScroll();
+    const y = useTransform(scrollY, [0, 2000], [0, 200]); 
+    
+return (
+        <div className="flex flex-wrap relative
+        overflow-hidden items-center justify-around 
+        w-full h-screen 
+        bg-[#0628ee] rounded-xl
+        mt-10">
+
+            <div className='absolute lg:left-8 lg:top-8 left-4 top-4  flex-col md:w-1/2 lg:w-1/3 justify-left gap-8 flex-2 font-mono text-sm text-gray-200'>
+            <p>Agon hosts fitness challenges in which users actively participate. 
+                Using machine vision technology, exercises are tracked and counted, earning users points and advancing them towards prizes.
+                All within the vibe of a cyberpunk fitness center.</p>
+            </div>
+
+
+            <motion.div 
+            className='phone-block relative'
+            style={{ y }}
+
+            initial={{ 
+                scale: 1,
+            }} 
+            whileHover={{
+                transition: { duration: 0.3 },
+            }}
+            whileTap={{
+                scale: 1.1,
+            }}
+            >
+            <img
+                src="./Agon/MainScreen.webp"
+                alt="Agon"
+                className="h-full lg:w-[420px] md:w-[240px] w-[180px] screen-block"
+            />
+            </motion.div>
+
+            {/* <motion.div 
+            className='h-full phone-block'
+            initial={{ 
+                scale: 1,
+            }} 
+            whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 1.1}}>
+            <ReactPlayer
+                url="/Agon/exercise_small.webm"
+                controls={true}
+                playing={true}
+                loop={true}
+                alt="Agon"
+                width={320}
+                height={"auto"}
+                style={{ borderRadius: '24px', overflow: 'hidden'}}
+            />
+            </motion.div> */}
+        </div>
+) }

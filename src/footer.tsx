@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                 <p className='opacity-50'>Developed with React</p>
                 </div>
             </div>
-            <div className='flex flex-col items-center mt-[-24px] mb-[-100px]'>
+            <div className='hidden md:flex lg:flex flex-col items-center mt-[-24px] mb-[-100px]'>
                 <div className='flex flex-row items-center my-[-24px] z-[2]'>
                     <Image src='/Footer/nda_f.webp' alt='Nda period app' layoutId='nda_f'/>
                     <Image src='/Footer/barter-landing.webp' alt='Nda period app' layoutId='Barter'/>

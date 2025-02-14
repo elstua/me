@@ -2,6 +2,7 @@ import React from "react";
 import ProjectHeader from "../../projectheader";
 import { motion } from "framer-motion";
 import ReactPlayer from "react-player";
+import BirdsMain from "./BirdsMain";
 
 export default function ThirtyBirdsBlock() {
     const getRandomRotation = () => {
@@ -21,7 +22,9 @@ export default function ThirtyBirdsBlock() {
                     linkText="Profile at 30birds"
             />
 
-            <div className="flex flex-row flex-wrap items-center justify-between w-full h-auto pt-10 pb-10">
+            <BirdsMain />
+
+            <div className="flex flex-row flex-wrap items-center gap- w-full h-auto pt-10 pb-10 lg:px-20 lg:pt-20 lg:pb-20">
                 <motion.img src="/30Birds/Slack.png" 
                     alt="30Birds"  
                     className="w-2/5 h-auto rounded-xl shadowblock"
@@ -56,12 +59,7 @@ export default function ThirtyBirdsBlock() {
 
              <div className="flex w-full justify-left pt-10 pb-10">
                 <div className='flex flex-col gap-8 w-1/2 md:w-2/4 text-sm font-mono'>
-                <p>
-                30 Birds was born from the idea that we often underappreciate each other in the work environment, and that genuine appreciation holds more significance than mere points on a CV or KPI.
-                </p>
-                <p>
-                Started from a simple Slack bot for sending 'birds' I led the team in designing a web suite around these ideas that bring +40% more sent praises.
-                </p>
+                
                 {/* <p>
                 The concept of origami birds, suggested by a designer friend I incorporate into the product in various forms, from instruction-like illustrations to paper-like UI elements. And, of course, actual birds for praises.    
                 </p> */}
@@ -73,17 +71,7 @@ export default function ThirtyBirdsBlock() {
 
             
             
-             <div className="flex flex-row flex-wrap items-start justify-between w-full h-auto pt-20 pb-10 gap-6">
-                    <motion.img src="/30Birds/cabinet.webp" 
-                    alt="30Birds" 
-                    width={1280} 
-                    height={720} 
-                    className="flex-1 h-full rounded-xl shadowblock"
-                    whileHover={{
-                        scale: 1.1,
-                        rotate: 0,
-                        transition: { duration: 0.3 },
-                      }}/>
+             <div className="flex flex-row flex-wrap items-start justify-between w-full h-auto pt-10 pb-10 gap-6">
 
                     <motion.div className="flex-2 w-45 h-auto"
                     whileHover={{

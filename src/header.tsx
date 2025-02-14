@@ -100,10 +100,8 @@ export default function Header(){
     }, []);
 
     return (
-            <header className= "flex flex-col items-center fixed top-0 left-0 right-0 z-30 pl-1 pr-1  pt-4 min-h-18">
-            <div 
-            className={` header-width items-between flex-row h-20`}>
-                <motion.div className={`flex justify-between w-full flex-row rounded-full backdrop-blur-lg ${showNav ? "showNav" : "hideNav"}`}
+            <header className= "flex flex-col items-center fixed top-0 left-0 right-0 z-30 pl-1 pr-1 pt-4 min-h-18">
+                <motion.div className={`flex max-w-[1200px] items-between flex-row h-20 justify-between w-full flex-row rounded-full backdrop-blur-lg ${showNav ? "showNav" : "hideNav"}`}
                 style={{ backgroundColor: headerColor, padding: padding, filter: blur}}
                 >
                 <Link
@@ -147,7 +145,6 @@ export default function Header(){
                     ↘︎ Contact me
                 </a>
                 </motion.div>
-            </div>
             
         </header>
     );

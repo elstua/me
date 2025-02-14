@@ -9,23 +9,27 @@ export default function ProjectsRow(){
     };
 
     return (
-        <div id="yango" className="flex flex-col items-center w-full">
+        <div className="flex-col items-center w-full hidden md:flex lg:flex md:px-4">
         <div className="content-width font-mono text-sm text-neutral-900 items-left pb-12 md:sm-8"><p>There are selected projects from small startups to huge corporations</p></div>
         <div className="content-width flex flex-col md:flex-row flex-wrap items-center justify-between gap-1 md:gap-4">
 
             
             <motion.div 
-                className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 rounded-2xl cursor-pointer bg-white"
-                initial={{ 
-                    rotate: `${String(getRandomRotation())}deg`,
-                    zIndex: 1,
-                }} 
-                whileHover={{
-                    zIndex: 10,
-                    rotate: 0,
-                    y: -20,
-                    transition: { duration: 0.3 },
-                }}
+                 className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 pl-2 pt-2 rounded-xl cursor-pointer border border-solid"
+                 initial={{ 
+                     zIndex: 1,
+                     rotate: 0,
+                     backgroundColor: '#D5FC5100',
+                     borderColor: '#baafa2',
+                 }} 
+                 whileHover={{
+                     zIndex: 10,
+                     rotate: getRandomRotation(),
+                     y: -20,
+                     transition: { duration: 0.3 },
+                     backgroundColor: '#D5FC51',
+                     borderColor: '#baafa200',
+                 }}
                 whileTap={{ scale: 0.9}}>
                     <Link
                         to="agon"
@@ -45,17 +49,21 @@ export default function ProjectsRow(){
                 </motion.div>
 
                 <motion.div 
-                className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 rounded-2xl cursor-pointer bg-white"
-                initial={{ 
-                    rotate: `${String(getRandomRotation())}deg`,
-                    zIndex: 1,
-                }} 
-                whileHover={{
-                    zIndex: 10,
-                    rotate: 0,
-                    y: -20,
-                    transition: { duration: 0.3 },
-                }}
+                 className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 pl-2 pt-2 rounded-xl cursor-pointer border border-solid"
+                 initial={{ 
+                     zIndex: 1,
+                     rotate: 0,
+                     backgroundColor: '#FCCD5600',
+                     borderColor: '#baafa2',
+                 }} 
+                 whileHover={{
+                     zIndex: 10,
+                     rotate: getRandomRotation(),
+                     y: -20,
+                     transition: { duration: 0.3 },
+                     backgroundColor: '#FCCD56',
+                     borderColor: '#baafa200',
+                 }}
                 whileTap={{ scale: 0.9}}>
                     <Link
                         to="30birds"
@@ -74,17 +82,21 @@ export default function ProjectsRow(){
                 </motion.div>
 
                 <motion.div 
-                className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 rounded-2xl cursor-pointer bg-white"
-                initial={{ 
-                    rotate: `${String(getRandomRotation())}deg`,
-                    zIndex: 1,
-                }} 
-                whileHover={{
-                    zIndex: 10,
-                    rotate: 0,
-                    y: -20,
-                    transition: { duration: 0.3 },
-                }}
+                 className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 pl-2 pt-2 rounded-xl cursor-pointer border border-solid"
+                 initial={{ 
+                     zIndex: 1,
+                     rotate: 0,
+                     backgroundColor: '#D3CAE500',
+                     borderColor: '#baafa2',
+                 }} 
+                 whileHover={{
+                     zIndex: 10,
+                     rotate: getRandomRotation(),
+                     y: -20,
+                     transition: { duration: 0.3 },
+                     backgroundColor: '#D3CAE5',
+                     borderColor: '#baafa200',
+                 }}
                 whileTap={{ scale: 0.9}}>
                     <Link
                         to="barter"
@@ -103,16 +115,20 @@ export default function ProjectsRow(){
                 </motion.div>
 
                 <motion.div 
-                className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 rounded-2xl cursor-pointer bg-white"
+                className="flex flex-row flex-auto w-full md:w-1/5 md:h-64 pl-2 pt-2 rounded-xl cursor-pointer border border-solid"
                 initial={{ 
-                    rotate: `${String(getRandomRotation())}deg`,
                     zIndex: 1,
+                    rotate: 0,
+                    backgroundColor: '#FFD70000',
+                    borderColor: '#baafa2',
                 }} 
                 whileHover={{
                     zIndex: 10,
-                    rotate: 0,
+                    rotate: getRandomRotation(),
                     y: -20,
                     transition: { duration: 0.3 },
+                    backgroundColor: '#FFD700',
+                    borderColor: '#baafa200',
                 }}
                 whileTap={{ scale: 0.9}}>
                     <Link
