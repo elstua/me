@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function BirdsMain() {
     const { scrollY } = useScroll();
-    const y = useTransform(scrollY, [0, 2000], [0, 200]); 
+    const y = useTransform(scrollY, [0, 10], [0, 200]); 
     
 return (
         <div className="flex flex-wrap relative
@@ -24,11 +24,12 @@ return (
             <motion.img src="/30Birds/cabinet.webp" 
             alt="30Birds" 
             style={{
-                y: 200,
+                scale: 1,
+                y
              }} 
             className="flex-1 w-max-[80%] h-full rounded-xl shadowblock"
             whileHover={{
-                y: 150,
+                scale: 1.02,
                 transition: { duration: 0.3 },
             }}
             />
