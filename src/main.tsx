@@ -28,12 +28,12 @@ export default function FirstScreen() {
           <p className='md:w-2/3 w-full'>
           Over the past nine years, my work title has been Product Designer.
           From seed-stage startups to large corporations, I have explored ways to design holistic experiences.</p>
-          <p className='md:w-2/3 w-full pt-6'>
-          I believe that software can tell a story. It can provide users with a new perspective on everyday life. It offer teams a journey of decisions and ideas that evolve into greateness.
+          <p className='md:w-2/3 w-full pt-8'>
+          Believe that software can tell a story. It can provide users with a new perspective on everyday life. It offer teams a journey of decisions and ideas that evolve into greateness.
           </p>
           
-          <p className='md:w-2/3 w-full pt-6'>
-          I am currently looking for a new project and would love to collaborate with you. Let's chat!
+          <p className='md:w-2/3 w-full pt-8'>
+          I am currently open for a job and colloborations, so let's chat!
           </p>
           <ul className="flex flex-col w-full pt-4 pb-10 gap-4">
           {/* <li className='flex flex-row gap-2'><p className='opacity-50'>Let's connect</p> <a href="mailto:stua@fastmail.com" className='no-underline hover:underline'>stua@fastmail.com</a></li> */}
