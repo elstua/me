@@ -54,10 +54,11 @@ export default function FirstScreen() {
           <li className='flex flex-row gap-2'><p className='opacity-50'>City</p><p>Lisbon</p></li>
           </ul>
 
-
+          <div><p className='Black pb-4'>Let's connect</p> </div>
+          <div className='flex gap-2'>
           <motion.button
           onClick={() => window.location.href = "mailto:stua@fastmail.com"}
-          className='rounded-2xl md:w-1/2 lg:w-1/4 px-2 py-2 no-underline border border-neutral-700 overflow-hidden relative'
+          className='rounded-2xl md:w-[220px] lg:w-[220px] w-full px-2 py-2 no-underline border border-neutral-400 hover:border-white overflow-hidden relative'
           initial="initial"
           whileHover="hover"
           animate="initial"
@@ -78,7 +79,7 @@ export default function FirstScreen() {
               }}
               transition={{ duration: 0.3 }}
             >
-              Let's work together
+              Write an email
             </motion.div>
             <motion.div
               className="absolute w-full left-0"
@@ -91,6 +92,44 @@ export default function FirstScreen() {
               stua@fastmail.com
             </motion.div>
           </motion.button>
+
+          <motion.button
+          onClick={() => window.location.href = "https://t.me/elstua"}
+          className='rounded-2xl md:w-[220px] lg:w-[220px] w-full px-2 py-2 no-underline border border-neutral-400 hover:border-white overflow-hidden relative'
+          initial="initial"
+          whileHover="hover"
+          animate="initial"
+          variants={{
+            initial: {
+              background: "#ffffff00"
+            },
+            hover: {
+              background: "#ffffff",
+              transition: { duration: 0.3 }
+            }
+          }}
+          >
+                        <motion.div
+              variants={{
+                initial: { y: 0 },
+                hover: { y: -30 }
+              }}
+              transition={{ duration: 0.3 }}
+            >
+              Contact in telegram
+            </motion.div>
+            <motion.div
+              className="absolute w-full left-0"
+              variants={{
+                initial: { y: 30 },
+                hover: { y: -20 }
+              }}
+              transition={{ duration: 0.3 }}
+            >
+              @elstua
+            </motion.div>
+          </motion.button>
+          </div>
           
         </div>
       </main>
