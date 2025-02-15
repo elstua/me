@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectHeader from '../../projectheader';
 import ReactPlayer from 'react-player';
 import { motion } from 'framer-motion';
 import Image from '../../imageExpand';
 
 export default function BarterBlock() {
+    const [isMobile, setIsMobile] = useState(false);
+    
+        useEffect(() => {
+            const checkMobile = () => {
+                setIsMobile(window.innerWidth <= 768);
+            };
+    
+            // Check on initial load
+            checkMobile();
+    
+            // Add event listener for window resize
+          window.addEventListener('resize', checkMobile);
+    
+            // Cleanup
+            return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+
     const getRandomRotation = () => {
         return Math.floor(Math.random() * 10) - 4; // Generate a random number between -4 and 4
     };
+
     return (
         <div id="barter" className="flex flex-col items-center w-full">
             <div className="content-width flex flex-col items-center justify-between">
@@ -21,7 +40,7 @@ export default function BarterBlock() {
             />
 
 
-             <div className="flex w-full md:w-2/3 h-auto pt-20 pb-10">
+             <div className="flex w-full md:w-2/3 h-auto pt-10">
                 <div className='w-full font-mono text-sm text-neutral-900'>
                 <p>
                 Barter is an intent based swap tool that saves money. Founders asked me to find a design language, create branding and explore the way to make a B2C part of product — exchange platform.
@@ -32,7 +51,7 @@ export default function BarterBlock() {
                 </div>
              </div>
 
-            <motion.div className="flex w-full pt-20 pb-10 px-10 px-8 lg:px-0"
+            <motion.div className="flex w-full pt-20 pb-4 lg:px-10 lg:px-0"
             whileHover={{
                 scale: 1.1,
                 zIndex: 10,
@@ -44,21 +63,24 @@ export default function BarterBlock() {
             }}>
                 <ReactPlayer
                     url="/Barter/barter.webm"
-                    playing={true}
+                    playing={!isMobile}
                     muted={true}
                     loop={true}
                     controls={true}
                     alt="barter interface"
                     width={"100%"}
                     height={"auto"}
-                    style={{ borderRadius: '16px', overflow: 'hidden'}}
+                    style={{ borderRadius: '8px', overflow: 'hidden'}}
                     styleName="shadowblock"
                 />
             </motion.div>
 
               {/* flow block */}
-            <div className="flex flex-wrap flex-row w-full h-auto justify-around pt-10 pb-10 px-8 lg:px-0 gap-8">
-                <motion.div className='browserwindow w-full w-45'
+            <div className="flex flex-wrap flex-row w-full h-auto justify-around pt-10 pb-10  lg:px-0 gap-8">
+                <motion.div className='browserwindow w-full lg:w-[45%] md:w-[40%]'
+                initial={{
+                    scale: 1,
+                }}
                 whileHover={{
                     scale: 1.1,
                     zIndex: 10,
@@ -70,7 +92,7 @@ export default function BarterBlock() {
                 }}>
                 <ReactPlayer
                     url="/Barter/barterchange.webm"
-                    playing={true}
+                    playing={!isMobile}
                     loop={true}
                     muted={true}
                     controls={true}
@@ -83,7 +105,7 @@ export default function BarterBlock() {
                 </motion.div>
                 
                 <motion.div 
-                    className='flex h-full '
+                    className='flex h-full phone-block relative'
                     initial={{ rotate: getRandomRotation(),
                         scale: 1,
                     }}
@@ -98,7 +120,7 @@ export default function BarterBlock() {
                     }} >
                     <ReactPlayer
                         url="/Barter/bartermobile.webm"
-                        playing={true}
+                        playing={!isMobile}
                         muted={true}
                         loop={true}
                         controls={true}
@@ -110,7 +132,7 @@ export default function BarterBlock() {
                     </motion.div>
             </div>
             
-            <motion.div className='browserwindow w-full px-8 lg:px-0'
+            <motion.div className='browserwindow w-full lg:px-0 pt-20 pb-20 lg:pt-1'
             whileHover={{
                 scale: 1.1,
                 zIndex: 10,
@@ -122,7 +144,7 @@ export default function BarterBlock() {
             }}>
                 <ReactPlayer
                     url="/Barter/explore.webm"
-                    playing={true}
+                    playing={!isMobile}
                     muted={true}
                     loop={true}
                     controls={true}
@@ -138,17 +160,17 @@ export default function BarterBlock() {
                      <p>A couple of images from pitchdeck and social media</p>
             </div>
             
-            <div className="flex flex-row flex-wrap justify-around w-full h-auto pt-10 pb-10 gap-1">
+            <div className="flex flex-row flex-wrap justify-around w-full h-auto pt-4 pb-10">
 
                     <Image src="/Barter/algorithm.webp" 
-                        alt="30Birds" layoutId='algorithm'/>
+                        alt="barter image shows integrations" layoutId='algorithm'/>
                     <Image src="/Barter/transformation.webp" 
-                        alt="30Birds" layoutId='transformation'/>
+                        alt="barter image from deck shows transformation to intents" layoutId='transformation'/>
                     <Image src="/Barter/types.webp" 
                         alt="Barter graphic for deck" 
                         layoutId='types'/>
                     <Image src="/Barter/barter-field.webp" 
-                        alt="30Birds" layoutId='multiverse of crypto'/>                        
+                        alt="barter image shows multiverse of crypto" layoutId='multiverse of crypto'/>                        
                     
                 </div>
         </div>

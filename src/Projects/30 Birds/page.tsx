@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ProjectHeader from "../../projectheader";
 import { motion } from "framer-motion";
 import ReactPlayer from "react-player";
 import BirdsMain from "./BirdsMain";
 
 export default function ThirtyBirdsBlock() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        // Check on initial load
+        checkMobile();
+
+        // Add event listener for window resize
+        window.addEventListener('resize', checkMobile);
+
+        // Cleanup
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     const getRandomRotation = () => {
         return Math.floor(Math.random() * 10) - 4; // Generate a random number between -4 and 4
     };
@@ -56,24 +73,11 @@ export default function ThirtyBirdsBlock() {
                     className="w-2/5 h-auto"  />
                      </div>
 
-
-             <div className="flex w-full justify-left pt-10 pb-10">
-                <div className='flex flex-col gap-8 w-1/2 md:w-2/4 text-sm font-mono'>
-                
-                {/* <p>
-                The concept of origami birds, suggested by a designer friend I incorporate into the product in various forms, from instruction-like illustrations to paper-like UI elements. And, of course, actual birds for praises.    
-                </p> */}
-                {/* <p>
-                Collaborating with founders and clients, we defined the main user cases and sought to understand how to establish a continuous feedback loop that could transform traditional 360-degree reviews, and how users could carry this feedback culture with them to new environments.
-                </p>  */}
-                </div>
-             </div>
-
             
             
              <div className="flex flex-row flex-wrap items-start justify-between w-full h-auto pt-10 pb-10 gap-6">
 
-                    <motion.div className="flex-2 w-45 h-auto"
+                    <motion.div className="flex-2 lg:w-[45%] md:w-[40%] h-auto"
                     whileHover={{
                         scale: 1.1,
                         rotate: 0,
@@ -82,13 +86,15 @@ export default function ThirtyBirdsBlock() {
                     whileTap={{scale:1.5}}>
                         <ReactPlayer
                         url="/30Birds/skillsbar.webm"
-                        playing={true}
+                        playing={!isMobile}
                         loop={true}
                         controls={true}
+                        muted={true}
                         alt="Agon"
                         width={"100%"}
                         height={"auto"}
                         style={{ borderRadius: '16px', overflow: 'hidden'}}
+                        playsinline={true}
                         />
                     </motion.div>
 
@@ -105,18 +111,11 @@ export default function ThirtyBirdsBlock() {
                       whileTap={{scale:1.5}}/>
 
                 </div>
-                <div className="flex w-full justify-center pt-10 pb-10">
-                {/* <div className='flex flex-col gap-8 w-full md:w-2/4 text-sm font-mono'>
-                <p>
-                The concept of origami birds, suggested by a designer friend I incorporate into the product in various forms, from instruction-like illustrations to paper-like UI elements. And, of course, actual birds for praises.    
-                </p>
-                </div> */}
-                </div>
 
-                <div className="flex flex-row flex-wrap items-center w-full h-auto pt-10 pb-10">
+                <div className="flex lg:flex-row md:flex-row lg:flex-nowrap md:flex-nowrap flex-col gap-2 flex-wrap items-center w-full h-auto py-3 lg:pt-10 lg:pb-10">
                     <motion.img src="/30Birds/card1.webp" 
                         alt="Open bird with praise" 
-                        className="flex-3 w-1/3 h-auto" 
+                        className="flex-3 w-[90%] lg:w-1/3 md:w-1/3 h-auto" 
                         initial={{ 
                             rotate: `${String(getRandomRotation())}deg`,
                             zIndex: 1,
@@ -132,7 +131,7 @@ export default function ThirtyBirdsBlock() {
 
                     <motion.img src="/30Birds/achieve.webp" 
                         alt="Achivement for skills" 
-                        className="flex-3 w-1/3 h-auto" 
+                        className="flex-3  w-[90%] lg:w-1/3 md:w-1/3 h-auto" 
                         initial={{ 
                             rotate: `${String(getRandomRotation())}deg`,
                             zIndex: 1,
@@ -148,7 +147,7 @@ export default function ThirtyBirdsBlock() {
 
                     <motion.img src="/30Birds/card2.webp" 
                         alt="open bird with big praise" 
-                        className="flex-3 w-1/3 h-auto" 
+                        className="flex-3  w-[90%] lg:w-1/3 md:w-1/3 h-auto" 
                         initial={{ 
                             rotate: `${String(getRandomRotation())}deg`,
                             zIndex: 1,
@@ -166,7 +165,6 @@ export default function ThirtyBirdsBlock() {
 
 
              <div className="flex flex-row-reverse flex-wrap w-full h-auto pt-20 pb-10 gap-8 font-mono text-sm">
-                    {/* <div className='h-80 w-full bg-slate-900'><p>main screen of 30birds</p> </div> */}
                     <motion.img src="/30Birds/company_view.webp" 
                     alt="30Birds" 
                     width={1280} 
@@ -180,9 +178,9 @@ export default function ThirtyBirdsBlock() {
                     }}
                     whileTap={{scale:1.2}}/>
                 
-                    <div className='flex-1 w-full text-sm font-mono'>
+                    <div className='flex-1 w-full text-sm font-mono pt-8'>
                         <p>Gamification help find new faces in company, get to know each other and see your team impact</p>
-                        <div className="flex flex-row flex-wrap w-full h-auto pt-2 pb-10 gap-2">
+                        <div className="flex flex-wrap justify-around w-full h-auto pt-2 lg:pb-10 md:pb-10 gap-2">
 
                         <motion.img src="/30Birds/Receiver-card.svg" 
                         alt="30Birds" 

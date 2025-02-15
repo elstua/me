@@ -21,39 +21,20 @@ return (
                 </p>
             </div>
 
-            <motion.img src="/30Birds/cabinet.webp" 
-            alt="30Birds" 
-            style={{
-                scale: 1,
-                y
-             }} 
-            className="lg:relative md:relative absolute left-12 top-20 h-full lg:w-max-[80%] md:w-max-[90%] lg:h-auto rounded-xl shadowblock"
+            <motion.div className='browserwindow lg:w-max-[80%] md:w-max-[90%] lg:h-auto
+            lg:block md:block absolute left-[10%] top-[50%] lg:top-[30%] w-full'
             whileHover={{
                 scale: 1.02,
                 transition: { duration: 0.3 },
             }}
-            />
+            whileTap={{scale:1.3,
+                zIndex: 10,
+            }}>
 
-            {/* <motion.div 
-            className='h-full phone-block'
-            initial={{ 
-                scale: 1,
-            }} 
-            whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.3 },
-            }}
-            whileTap={{ scale: 1.1}}>
-            <ReactPlayer
-                url="/Agon/exercise_small.webm"
-                controls={true}
-                playing={true}
-                loop={true}
-                alt="Agon"
-                width={320}
-                height={"auto"}
-                style={{ borderRadius: '24px', overflow: 'hidden'}}
-            />
-            </motion.div> */}
+                <img src="/30Birds/cabinet.webp" 
+                alt="30Birds" 
+                className="h-full rounded-xl shadowblock"
+                />
+            </motion.div>
         </div>
 ) }
