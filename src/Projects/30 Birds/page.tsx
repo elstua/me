@@ -24,7 +24,7 @@ export default function ThirtyBirdsBlock() {
 
             <BirdsMain />
 
-            <div className="flex flex-row flex-wrap items-center gap- w-full h-auto pt-10 pb-10 lg:px-20 lg:pt-20 lg:pb-20">
+            <div className="lg:flex md:flex hidden flex-row flex-wrap items-center gap- w-full h-auto pt-10 pb-10 lg:px-20 lg:pt-20 lg:pb-20">
                 <motion.img src="/30Birds/Slack.png" 
                     alt="30Birds"  
                     className="w-2/5 h-auto rounded-xl shadowblock"

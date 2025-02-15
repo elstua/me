@@ -27,7 +27,7 @@ return (
                 scale: 1,
                 y
              }} 
-            className="flex-1 w-max-[80%] h-full rounded-xl shadowblock"
+            className="lg:relative md:relative absolute left-12 top-20 h-full lg:w-max-[80%] md:w-max-[90%] lg:h-auto rounded-xl shadowblock"
             whileHover={{
                 scale: 1.02,
                 transition: { duration: 0.3 },

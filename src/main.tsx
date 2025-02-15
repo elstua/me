@@ -25,14 +25,14 @@ export default function FirstScreen() {
           whileTap={{ scale: 2 }}
             />
           </div>
-          <p className='md:w-2/3 w-full'>
+          <p className='md:w-2/3 xl:w-2/5 w-full'>
           Over the past nine years, my work title has been Product Designer.
           From seed-stage startups to large corporations, I have explored ways to design holistic experiences.</p>
-          <p className='md:w-2/3 w-full pt-8'>
+          <p className='md:w-2/3 xl:w-2/5 w-full pt-8'>
           Believe that software can tell a story. It can provide users with a new perspective on everyday life. It offer teams a journey of decisions and ideas that evolve into greateness.
           </p>
           
-          <p className='md:w-2/3 w-full pt-8'>
+          <p className='md:w-2/3 xl:w-2/5 w-full pt-8'>
           I am currently open for a job and colloborations, so let's chat!
           </p>
           <ul className="flex flex-col w-full pt-4 pb-10 gap-4">

@@ -11,7 +11,7 @@ export default function YangoBlock() {
     return (
         
         <div id="yango" className="flex flex-col items-center w-full">
-        <div className="content-width flex flex-col items-center justify-between">
+        <div className="content-width flex flex-col items-center justify-between px-10">
 
                 <ProjectHeader 
                 name="Yango" 

@@ -27,9 +27,9 @@ return (
     <ReactPlayer
         url="/Agon/buycoins.webm"
         playing={true}
+        muted={true}
         controls={false}
         loop={true}
-        autoplay={true}
         alt="Agon"
         width={'auto'}
         height={"auto"}
@@ -53,8 +53,8 @@ return (
     <ReactPlayer
         url="/Agon/onboarding.webm"
         playing={true}
+        muted={true}
         controls={false}
-        autoplay={true}
         loop={true}
         alt="Agon"
         width={'auto'}

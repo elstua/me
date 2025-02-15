@@ -32,7 +32,7 @@ export default function BarterBlock() {
                 </div>
              </div>
 
-            <motion.div className="flex w-full pt-20 pb-10"
+            <motion.div className="flex w-full pt-20 pb-10 px-10 px-8 lg:px-0"
             whileHover={{
                 scale: 1.1,
                 zIndex: 10,
@@ -45,6 +45,7 @@ export default function BarterBlock() {
                 <ReactPlayer
                     url="/Barter/barter.webm"
                     playing={true}
+                    muted={true}
                     loop={true}
                     controls={true}
                     alt="barter interface"
@@ -56,7 +57,7 @@ export default function BarterBlock() {
             </motion.div>
 
               {/* flow block */}
-            <div className="flex flex-wrap flex-row w-full h-auto justify-around pt-10 pb-10 gap-8">
+            <div className="flex flex-wrap flex-row w-full h-auto justify-around pt-10 pb-10 px-8 lg:px-0 gap-8">
                 <motion.div className='browserwindow w-full w-45'
                 whileHover={{
                     scale: 1.1,
@@ -71,6 +72,7 @@ export default function BarterBlock() {
                     url="/Barter/barterchange.webm"
                     playing={true}
                     loop={true}
+                    muted={true}
                     controls={true}
                     alt="barter interface"
                     width={"100%"}
@@ -97,6 +99,7 @@ export default function BarterBlock() {
                     <ReactPlayer
                         url="/Barter/bartermobile.webm"
                         playing={true}
+                        muted={true}
                         loop={true}
                         controls={true}
                         alt="Agon"
@@ -107,7 +110,7 @@ export default function BarterBlock() {
                     </motion.div>
             </div>
             
-            <motion.div className='browserwindow w-full'
+            <motion.div className='browserwindow w-full px-8 lg:px-0'
             whileHover={{
                 scale: 1.1,
                 zIndex: 10,
@@ -120,6 +123,7 @@ export default function BarterBlock() {
                 <ReactPlayer
                     url="/Barter/explore.webm"
                     playing={true}
+                    muted={true}
                     loop={true}
                     controls={true}
                     alt="barter interface"

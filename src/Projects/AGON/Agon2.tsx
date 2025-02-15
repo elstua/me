@@ -45,7 +45,7 @@ return (
                 url="/Agon/exercise_small.webm"
                 controls={true}
                 playing={true}
-                autoPlay={true}
+                muted={true}
                 loop={true}
                 alt="Agon"
                 width={"100%"}
