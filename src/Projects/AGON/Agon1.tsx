@@ -40,27 +40,5 @@ return (
                 className="h-full lg:w-[420px] md:w-[240px] w-[180px] screen-block"
             />
             </motion.div>
-
-            {/* <motion.div 
-            className='h-full phone-block'
-            initial={{ 
-                scale: 1,
-            }} 
-            whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.3 },
-            }}
-            whileTap={{ scale: 1.1}}>
-            <ReactPlayer
-                url="/Agon/exercise_small.webm"
-                controls={true}
-                playing={true}
-                loop={true}
-                alt="Agon"
-                width={320}
-                height={"auto"}
-                style={{ borderRadius: '24px', overflow: 'hidden'}}
-            />
-            </motion.div> */}
         </div>
 ) }

@@ -14,7 +14,6 @@ return (
 
   <motion.div 
     className='w-[240px] h-auto phone-block relative'
-    // style={{ marginTop: '80px'}}
     initial={{ 
         scale: 1,
     }} 

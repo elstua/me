@@ -57,20 +57,23 @@ export default function FirstScreen() {
           <div><p className='Black pb-4'>Let's connect</p> </div>
           <div className='flex gap-2'>
           <motion.button
-          onClick={() => window.location.href = "mailto:stua@fastmail.com"}
-          className='rounded-2xl md:w-[220px] lg:w-[220px] w-full px-2 py-2 no-underline border border-neutral-400 hover:border-white overflow-hidden relative'
-          initial="initial"
-          whileHover="hover"
-          animate="initial"
-          variants={{
-            initial: {
-              background: "#ffffff00"
-            },
-            hover: {
-              background: "#ffffff",
-              transition: { duration: 0.3 }
-            }
-          }}
+              onClick={() => window.location.href = "mailto:stua@fastmail.com"}
+              className='md:w-[220px] lg:w-[220px] w-full px-2 py-2 overflow-hidden border  relative rounded-3xl  text-neutral-800 '
+              initial="initial"
+              whileHover="hover"
+              animate="initial"
+              variants={{
+                initial: {
+                  background: "#F0E2CA00",
+                  borderColor: "#baafa2",
+
+                },
+                hover: {
+                  borderColor: '#F0E2CA',
+                  background: "#F0E2CA",
+                  transition: { duration: 0.3 }
+                }
+              }}
           >
             <motion.div
               variants={{
@@ -95,16 +98,19 @@ export default function FirstScreen() {
 
           <motion.button
           onClick={() => window.location.href = "https://t.me/elstua"}
-          className='rounded-2xl md:w-[220px] lg:w-[220px] w-full px-2 py-2 no-underline border border-neutral-400 hover:border-white overflow-hidden relative'
+          className='md:w-[220px] lg:w-[220px] w-full px-2 py-2 overflow-hidden border  relative rounded-3xl  text-neutral-800 '
           initial="initial"
           whileHover="hover"
           animate="initial"
           variants={{
             initial: {
-              background: "#ffffff00"
+              background: "#F0E2CA00",
+              borderColor: "#baafa2",
+
             },
             hover: {
-              background: "#ffffff",
+              borderColor: '#F0E2CA',
+              background: "#F0E2CA",
               transition: { duration: 0.3 }
             }
           }}
