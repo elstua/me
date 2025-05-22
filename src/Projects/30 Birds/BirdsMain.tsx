@@ -27,13 +27,13 @@ return (
                 scale: 1.02,
                 transition: { duration: 0.3 },
             }}
-            whileTap={{scale:1.3,
+            whileTap={{scale:1.1,
                 zIndex: 10,
             }}>
 
                 <img src="/30Birds/cabinet.webp" 
                 alt="30Birds" 
-                className="h-full rounded-xl shadowblock"
+                className="rounded-xl shadowblock"
                 />
             </motion.div>
         </div>
