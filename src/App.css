@@ -10,7 +10,8 @@
   height: 80svh;
 }
 .border-color {
-  background-color: #baafa2;
+  border-color: #baafa2;
+  color: #92877b;
 }
 
 @media screen and (max-width: 900px) {
