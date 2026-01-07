@@ -9,7 +9,9 @@
 .mainblock-height{
   height: 80svh;
 }
-
+.border-color {
+  background-color: #baafa2;
+}
 
 @media screen and (max-width: 900px) {
   .header-width {

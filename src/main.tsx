@@ -36,20 +36,12 @@ export default function FirstScreen() {
           I am currently open for a job and colloborations, so let's chat!
           </p>
           <ul className="flex flex-col w-full pt-4 pb-10 gap-4">
-          {/* <li className='flex flex-row gap-2'><p className='opacity-50'>Let's connect</p> <a href="mailto:stua@fastmail.com" className='no-underline hover:underline'>stua@fastmail.com</a></li> */}
-          <li className='flex flex-row gap-2'><p className='opacity-50'>Experience</p> 
-            <a href="https://read.cv/stua" target="_blank" rel="noopener noreferrer" 
-            className='no-underline hover:underline'>Read.cv ↗︎</a>
-            <p>,</p>
-            <a href="https://linkedin.com/in/stua" target="_blank" rel="noopener noreferrer" 
-            className='no-underline hover:underline'>LinkedIn ↗︎</a>
-          </li>
           <li className='flex flex-row gap-2'><p className='opacity-50'>Social</p> 
           <a href="https://twitter.com/s_tu_a" target="_blank" rel="noopener noreferrer" 
           className='no-underline hover:underline'>Twitter ↗︎</a>
           <p>,</p>
-          <a href="https://posts.cv/stua" target="_blank" rel="noopener noreferrer" 
-          className='no-underline hover:underline'>Posts ↗︎</a>
+          <a href="https://linkedin.com/in/stua" target="_blank" rel="noopener noreferrer" 
+            className='no-underline hover:underline'>LinkedIn ↗︎</a>
           </li>
           <li className='flex flex-row gap-2'><p className='opacity-50'>City</p><p>Lisbon</p></li>
           </ul>

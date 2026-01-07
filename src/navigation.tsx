@@ -40,10 +40,10 @@ export default function ProjectsRow(){
                         >
                             <img src="/Agon/Logo.svg" alt="Agon app" className="w-16 md:w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Fitness</div>
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">App</div>
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">AI</div>
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Gamification</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Fitness</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">App</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">AI</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Gamification</div>
                             </div>
                     </Link>
                 </motion.div>
@@ -74,9 +74,9 @@ export default function ProjectsRow(){
                         >
                             <img src="/30Birds/logo.svg" alt="30 Birds" className="w-16 md:w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">SaaS</div>
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">HR-tech</div>
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Recognition</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">SaaS</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">HR-tech</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Recognition</div>
                             </div>
                     </Link>
                 </motion.div>
@@ -107,9 +107,9 @@ export default function ProjectsRow(){
                         >
                             <img src="/Barter/Logo.svg" alt="Barter logo" className="w-16 md:w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Web3</div>
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Infrastructure</div>
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Exchange</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Web3</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Infrastructure</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Exchange</div>
                             </div>
                     </Link>
                 </motion.div>
@@ -140,12 +140,13 @@ export default function ProjectsRow(){
                         >
                             <img src="/Yango/logo.svg" alt="Yango logo" className="w-16 md:w-2/3"/>
                             <div className="flex flex-row flex-wrap w-full font-mono text-sm">
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Taxi</div>
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Delivery</div>
-                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center bg-slate-100">Superapp</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Taxi</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Delivery</div>
+                            <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Superapp</div>
                             </div>
                     </Link>
                 </motion.div>
+            
         </div>
         </div>
     );
