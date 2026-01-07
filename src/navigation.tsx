@@ -39,7 +39,7 @@ export default function ProjectsRow(){
                         className="flex flex-row md:flex-col flex-wrap w-full p-4 justify-between overflow-hidden"
                         >
                             <img src="/Agon/Logo.svg" alt="Agon app" className="w-16 md:w-2/3"/>
-                            <div className="flex flex-row flex-wrap w-full font-mono text-sm">
+                            <div className="flex flex-row flex-wrap w-full font-mono text-sm gap-1" >
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Fitness</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">App</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">AI</div>
@@ -73,7 +73,7 @@ export default function ProjectsRow(){
                         className="flex flex-row md:flex-col flex-wrap w-full p-4 justify-between overflow-hidden"
                         >
                             <img src="/30Birds/logo.svg" alt="30 Birds" className="w-16 md:w-2/3"/>
-                            <div className="flex flex-row flex-wrap w-full font-mono text-sm">
+                            <div className="flex flex-row flex-wrap w-full font-mono text-sm gap-1" >
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">SaaS</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">HR-tech</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Recognition</div>
@@ -106,7 +106,7 @@ export default function ProjectsRow(){
                         className="flex flex-row md:flex-col flex-wrap w-full p-4 justify-between overflow-hidden"
                         >
                             <img src="/Barter/Logo.svg" alt="Barter logo" className="w-16 md:w-2/3"/>
-                            <div className="flex flex-row flex-wrap w-full font-mono text-sm">
+                            <div className="flex flex-row flex-wrap w-full font-mono text-sm gap-1" >
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Web3</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Infrastructure</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Exchange</div>
@@ -139,7 +139,7 @@ export default function ProjectsRow(){
                         className="flex flex-row md:flex-col flex-wrap w-full p-4 justify-between overflow-hidden"
                         >
                             <img src="/Yango/logo.svg" alt="Yango logo" className="w-16 md:w-2/3"/>
-                            <div className="flex flex-row flex-wrap w-full font-mono text-sm">
+                            <div className="flex flex-row flex-wrap w-full font-mono text-sm gap-1">
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Taxi</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Delivery</div>
                             <div className="flex flex-2 h-6 p-4 rounded-2xl items-center border-color">Superapp</div>
