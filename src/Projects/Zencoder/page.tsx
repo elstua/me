@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import ProjectHeader from '../../projectheader';
-import { motion } from 'framer-motion';
-import Image from '../../imageExpand';
 import ExpandableProjectContent from '../../ExpandableProjectContent';
 import ZenMain from './ZenMain';
 import Zen1 from './zen1';

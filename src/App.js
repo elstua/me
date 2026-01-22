@@ -10,7 +10,6 @@ import BarterBlock from "./Projects/Barter/page.tsx";
 import ZencoderBlock from "./Projects/Zencoder/page.tsx";
 import { Element } from "react-scroll";
 import Footer from "./footer.tsx";
-import ChainstackBlock from "./Projects/Chainstack/page.tsx";
 import Yango from "./Projects/Yango/page.tsx";
 
 function App() {

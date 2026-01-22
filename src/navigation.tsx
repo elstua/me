@@ -11,15 +11,6 @@ export default function ProjectsRow(){
             <div className="flex-col content-width font-mono text-sm text-neutral-900 items-left pb-4 md:sm-8"><p className="text-neutral-500">Before:</p></div>
 
         <div className="content-width flex flex-col md:flex-row flex-nowrap items-center justify-between gap-1 md:gap-4">
-{/* 
-            <ProjectCard 
-                to="chainstack"
-                hoverColor="#A9D2FF"
-                logoSrc="/chainstack/Logo.svg"
-                logoAlt="Chainstack logo"
-                logoClassName="w-24"
-                text="Web3 Node provider"
-            /> */}
 
             <ProjectCard 
                 to="zencoder"
