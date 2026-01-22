@@ -12,6 +12,7 @@ export function HeaderNav(){
 
       }, []);
     const links = [
+        { href: "zencoder", text: "Zencoder" },
         { href: "agon", text: "Agon" },
         { href: "30birds", text: "30 Birds" },
         { href: "barter", text: "Barter" },
@@ -27,7 +28,7 @@ export function HeaderNav(){
             {links.map((link, index) => (
                 <Link
                     className="flex flex-1 justify-center content-center items-center align-middle
-                    rounded-full font-mono text-sm md:h-12 text-black cursor-pointer
+                    rounded-full font-mono text-sm md:h-12 w-12 md:w-auto text-black cursor-pointer
                     transition-all ease-in-out headernav
                     duration-300 ..."
                     activeClass="font-extrabold"
@@ -39,7 +40,8 @@ export function HeaderNav(){
                     offset={-300}
                     onSetActive={handleSetActive}
                 >
-                    {link.text}
+                    <span className="md:hidden text-lg">◦</span>
+                    <span className="hidden md:inline">{link.text}</span>
                 </Link>
             ))}
         </>
@@ -106,7 +108,7 @@ export default function Header(){
                 >
                 <Link
                     className="hidden md:flex md:p-4 justify-center content-center items-center align-middle
-                    rounded-full font-mono text-sm h-12 text-black cursor-pointer
+                    rounded-full font-mono text-sm text-black cursor-pointer
                     transition-all ease-in-out
                     headernav duration-300 ..."
                     activeClass="font-extrabold decoration-solid"
@@ -118,8 +120,8 @@ export default function Header(){
                     Artem Savelev
                 </Link>
                 <Link
-                    className="md:hidden flex md:p-4 justify-center content-center items-center align-middle
-                    rounded-full font-mono text-sm h-12 text-black cursor-pointer
+                    className="md:hidden flex justify-center content-center items-center align-middle
+                    rounded-full font-mono text-sm text-black cursor-pointer
                     transition-all ease-in-out
                     headernav duration-300 ..."
                     activeClass="font-extrabold decoration-solid"
@@ -131,7 +133,7 @@ export default function Header(){
                     Stua
                 </Link>
 
-                <div className={`flex flex-row w-full sm:w-2/4 content-between ${showProjectNav ? "show" : "hide"}`}>
+                <div className={`flex flex-row justify-center w-4/5 md:w-2/5 ${showProjectNav ? "show" : "hide"}`}>
                     <HeaderNav />
                 </div>
 

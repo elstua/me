@@ -11,7 +11,7 @@ return (
         overflow-hidden items-center justify-around 
         w-full h-screen 
         bg-[#0628ee] rounded-xl
-        mt-10">
+        ">
 
             <div className='absolute lg:left-8 lg:top-8 left-4 top-4  flex-col md:w-1/2 lg:w-1/3 justify-left gap-8 flex-2 font-mono text-sm text-gray-200'>
             <p>Agon hosts fitness challenges in which users actively participate. 

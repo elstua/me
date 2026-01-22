@@ -1,20 +1,24 @@
 import React from "react";
 import ProjectHeader from "../../projectheader";
-import AgonBlock1 from "./Agon1";
+import AgonBlock1 from "./AgonMain";
 import AgonBlock2 from "./Agon2";
 import AgonBlock3 from "./Agon3";
 import AgonBlock4 from "./Agon4";
+import ExpandableProjectContent from "../../ExpandableProjectContent";
 
 export default function AgonBlock() {
-    const getRandomRotation = () => {
-        return Math.floor(Math.random() * 10) - 4; // Generate a random number between -4 and 4
-    };
-
-
+    // Preview images for the toggle button thumbnails
+    const previewImages = [
+        { src: "/Agon/challenge.webp", className: "h-36 rounded-lg" },     // From AgonBlock2
+        { src: "/Agon/done_card.webp", className: "h-20 md:block hidden" },
+        { src: "/Agon/onboarding04.webp", className: "h-36 h-20 rounded-lg" }, // From AgonBlock3
+        { src: "/Agon/paywall.webp", className: "h-36 h-20 rounded-lg" },      // From AgonBlock4
+    ];
 
     return (
         <div id="agon" className="flex flex-col items-center w-full">
             <div className="content-width flex flex-col items-left justify-between">
+                {/* Project header - always visible */}
                 <ProjectHeader
                     name="Agon"
                     startDate={2023}
@@ -23,15 +27,21 @@ export default function AgonBlock() {
                     link="https://apps.apple.com/pt/app/agon-fitness-rewards/id1574023421?l=en-GB"
                     linkText="App at Appstore" />
 
-                    <AgonBlock1/>
-                <div className="flex flex-wrap md:flex-nowrap lg:flex-nowrap w-full flex-row lg:pt-20 gap-4">
-                    <AgonBlock3/>
-                    <AgonBlock2/>
+                {/* Main hero block - always visible */}
+                <AgonBlock1/>
 
-                </div>
+                {/* Expandable detail blocks */}
+                <ExpandableProjectContent 
+                    projectName="Agon" 
+                    previewImages={previewImages}
+                >
+                    <div className="flex flex-wrap md:flex-nowrap w-full flex-row gap-2">
+                        <AgonBlock3/>
+                        <AgonBlock2/>
+                    </div>
                     <AgonBlock4/>
-                </div>
-
+                </ExpandableProjectContent>
             </div>
+        </div>
     );
 }

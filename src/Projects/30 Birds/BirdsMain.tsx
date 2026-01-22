@@ -9,10 +9,10 @@ export default function BirdsMain() {
 return (
         <div className="flex flex-wrap relative
         overflow-hidden items-center justify-around 
-        w-full h-screen mt-10
+        w-full h-screen
         bg-[#FCCD56] px-8 rounded-xl">
 
-            <div className='absolute lg:left-8 lg:top-8 left-4 top-4 flex-col md:w-1/2 lg:w-1/2 justify-left gap-8 flex-2 font-mono text-sm text-gray-800'>
+            <div className='absolute lg:left-8 lg:top-8 left-4 top-4 flex-col w-[90%] md:w-1/2 lg:w-1/2 justify-left gap-8 flex-2 font-mono text-sm text-gray-800'>
                 <p>
                 30 Birds was born from the idea that we often underappreciate each other in the work environment, and that genuine appreciation holds more significance than mere points on a CV or KPI.
                 </p>

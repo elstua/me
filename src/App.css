@@ -6,12 +6,23 @@
   max-width: 1200px;
   width: 100%;
 }
+.cave-width {
+  width: 100%;
+  max-width: 1200px;
+  overflow: none;
+}
+
 .mainblock-height{
-  height: 80svh;
+  height: 78svh;
 }
 .border-color {
   border: 1px solid #baafa2;
   color: #92877b;
+}
+
+.zencoder-border {
+  box-shadow:  0px 0px 0px 1px #454545;
+  border-radius: 16px;
 }
 
 @media screen and (max-width: 900px) {
@@ -27,6 +38,10 @@
   .w-45{
     width: 100%;
   }
+  .cave-width{
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -37,10 +52,20 @@
   .w-45{
     width: 100%;
   }  
+  .cave-width{
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
-@media screen and (max-width: 720px) {.mainblock-height{
+@media screen and (max-width: 720px) {
+  
+  .mainblock-height{
   height: 90svh;
+}
+.content-width{
+  padding-left: 8px;
+  padding-right: 8px;
 }
 }
 

@@ -6,12 +6,14 @@ export default function AgonBlock3() {
     const y = useTransform(scrollY, [0, 2000], [0, 200]); 
     
 return (
-        <div className="lg:flex md:flex flex-row lg:flex-col md:flex-nowrap relative
-        w-full lg:w-2/5 lg:overflow-visible hidden
-        items-center justify-center gap-1 lg:gap-2 
-        lg:pt-16 lg:pb-16 lg:px-16 py-8">
+        <div className="flex flex-row flex-wrap md:flex-col md:flex-nowrap
+        w-full lg:w-2/5 lg:overflow-visible
+        items-start justify-start gap-1 lg:gap-2 
+        lg:pt-16 lg:pb-16 py-8
+        
+        *:md:w-[70%] *:w-[45%]">
           <motion.img src="/Agon/first_day_card.webp" alt="Agon" 
-                    className="w-full max-w-[80%] h-auto"
+                    className="h-auto"
                     initial={{ 
                         scale: 1,
                     }} 
@@ -24,7 +26,7 @@ return (
                         zIndex: 10,
                       }} />
                     <motion.img src="/Agon/done_card.webp" alt="Agon"
-                       className="w-full max-w-[80%] h-auto"
+                       className="h-auto"
                        initial={{ 
                         scale: 1,
                     }} 
@@ -38,7 +40,7 @@ return (
                         zIndex: 10, 
                       }}/>
                     <motion.img src="/Agon/top15_card.webp" alt="Agon"
-                     className="w-full max-w-[80%] h-auto"
+                     className="h-auto"
                      initial={{ 
                         scale: 1,
                     }} 
@@ -52,7 +54,7 @@ return (
                         zIndex: 10
                       }}/>
                     <motion.img src="/Agon/last_day_card.webp" alt="Agon"
-                     className="w-full max-w-[80%] h-auto"
+                     className="h-auto"
                      initial={{ 
                         scale: 1,
                     }} 
@@ -66,7 +68,7 @@ return (
                         zIndex: 10,
                       }}/>
                     <motion.img src="/Agon/top10_card.webp" alt="Agon"
-                     className="w-full max-w-[80%] h-auto"
+                     className="h-auto"
                      initial={{ 
                         scale: 1,
                     }} 

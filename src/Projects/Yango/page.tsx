@@ -23,9 +23,9 @@ export default function YangoBlock() {
                 />
 
 
-                <div className="flex justify-between w-full pt-10 pb-10 place-content-center">
+                <div className="flex justify-between w-full pt-10 pb-10 place-content-center gap-4">
                 <motion.div 
-                        className='h-full phone-block'
+                        className='phone-block'
                         initial={{ 
                             rotate: `${String(getRandomRotation())}deg`,
                             scale: 1,
@@ -41,7 +41,7 @@ export default function YangoBlock() {
                         alt="Delivery option in Yango app"
                         width={220}
                         height={"auto"}
-                        className="h-full screen-block"
+                        className=" screen-block"
                     />
                     </motion.div>
 
@@ -62,7 +62,7 @@ export default function YangoBlock() {
                         alt="Order process in Yango app"
                         width={220}
                         height={"auto"}
-                        className="h-full screen-block"
+                        className="screen-block"
                     />
                     </motion.div>
 

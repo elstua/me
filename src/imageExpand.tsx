@@ -8,9 +8,10 @@ interface ImageProps {
   alt: string;
   layoutId: string;
   size?: string;
+  type?: 'image' | 'video'; // Add type to distinguish between image and video
 }
 
-function Image({ src, alt, layoutId }: ImageProps) {
+function Image({ src, alt, layoutId, type = 'image' }: ImageProps) {
   const [open, setOpen] = useState(true);
   const getRandomRotation = () => {
     return Math.floor(Math.random() * 10) - 8; // Generate a random number between -4 and 4
@@ -61,14 +62,18 @@ function Image({ src, alt, layoutId }: ImageProps) {
                 },
               }}
             >
-              <motion.img src={src} alt={alt} className="imageblock"/>
+              {type === 'video' ? (
+                <motion.video src={src} className="imageblock" autoPlay loop muted playsInline />
+              ) : (
+                <motion.img src={src} alt={alt} className="imageblock"/>
+              )}
 
             </motion.div>
           </motion.div>
         </motion.div>
       ) : (
 
-        <motion.div className=" z-[30] h-64 relative">
+        <motion.div className=" z-[99] h-64 relative">
           <motion.div
             className="h-full w-full fixed flex items-center content-center justify-center top-0 left-0"
             onClick={() => setOpen(true)}
@@ -98,7 +103,11 @@ function Image({ src, alt, layoutId }: ImageProps) {
               whileTap={{ scale: 1 }}
               transition={{ type:'circIn', duration: 0.4}}
             >
-              <motion.img src={src} alt={alt} className="h-auto imageblock" />
+              {type === 'video' ? (
+                <motion.video src={src} className="h-auto imageblock" autoPlay loop muted playsInline />
+              ) : (
+                <motion.img src={src} alt={alt} className="h-auto imageblock" />
+              )}
             </motion.div>
           </motion.div>
         </motion.div>
