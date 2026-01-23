@@ -48,7 +48,7 @@ function Image({ src, alt, layoutId, type = 'image' }: ImageProps) {
                 backgroundColor: "rgba(255,247,237,0)",
               },
             }}
-            transition={{ type: 'circIn', duration: 0.4 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
           >
             <motion.div
               layoutId={layoutId}
@@ -101,7 +101,7 @@ function Image({ src, alt, layoutId, type = 'image' }: ImageProps) {
               initial={{margin: '0px'}}
               whileHover={{ scale: 1.04, transition: { duration: 0.4 } }}
               whileTap={{ scale: 1 }}
-              transition={{ type:'circIn', duration: 0.4}}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
             >
               {type === 'video' ? (
                 <motion.video src={src} className="h-auto imageblock" autoPlay loop muted playsInline />

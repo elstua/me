@@ -91,10 +91,6 @@ export function applyGradientMask(
     intensity = 0.5,
   } = options;
 
-  // Save the current image data
-  const imageData = ctx.getImageData(0, 0, width, height);
-  const data = imageData.data;
-
   // Create a gradient based on type and direction
   let gradient: CanvasGradient;
   

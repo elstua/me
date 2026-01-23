@@ -54,19 +54,11 @@ export default function ExpandableProjectContent({
             y: 0,
             opacity: 1,
             filter: 'blur(0px)',
-            transition: {
-                duration: 0.4,
-                ease: 'easeOut',
-            },
         },
         exit: {
             y: -50,
             opacity: 0,
             filter: 'blur(8px)',
-            transition: {
-                duration: 0.3,
-                ease: 'easeIn',
-            },
         },
     };
 
@@ -171,6 +163,10 @@ export default function ExpandableProjectContent({
                         initial="hidden"
                         animate="visible"
                         exit="exit"
+                        transition={{
+                            duration: 0.4,
+                            ease: "easeOut"
+                        }}
                     >
                         {children}
                     </motion.div>

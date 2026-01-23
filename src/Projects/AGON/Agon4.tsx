@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from 'react-player'
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion } from "motion/react";
 
 export default function AgonBlock4() {
     

@@ -26,7 +26,7 @@ export default function FirstScreen() {
                   initial="initial"
                   whileHover="hover"
                   animate="initial"
-                  style={{ shadow: "0px 0px 0px 1px rgba(184, 175, 163, 0.5);" }}
+                  style={{ boxShadow: "0px 0px 0px 1px rgba(184, 175, 163, 0.5)" }}
                   variants={{
                     initial: {
                       background: "#ffffff",

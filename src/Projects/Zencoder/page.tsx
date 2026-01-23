@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ProjectHeader from '../../projectheader';
 import ExpandableProjectContent from '../../ExpandableProjectContent';
 import ZenMain from './ZenMain';
