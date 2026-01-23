@@ -2,8 +2,6 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function BirdsMain() {
-    const { scrollY } = useScroll();
-    const y = useTransform(scrollY, [0, 10], [0, 200]); 
     
 return (
         <div className="flex flex-wrap relative

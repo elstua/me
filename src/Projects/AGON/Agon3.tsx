@@ -2,8 +2,6 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function AgonBlock3() {
-    const { scrollY } = useScroll();
-    const y = useTransform(scrollY, [0, 2000], [0, 200]); 
     
 return (
         <div className="flex flex-row flex-wrap md:flex-col md:flex-nowrap

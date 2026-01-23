@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link, scrollSpy } from 'react-scroll';
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "./App.css";
