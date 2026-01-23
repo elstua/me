@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProjectHeader from "../../projectheader";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import ReactPlayer from "react-player";
 import BirdsMain from "./BirdsMain";
 import ExpandableProjectContent from "../../ExpandableProjectContent";
@@ -29,7 +29,7 @@ export default function ThirtyBirdsBlock() {
 
     // Preview images for the toggle button thumbnails
     const previewImages = [
-        {"src": "./30Birds/builders.svg", "className": "w-32 h-auto"},
+        {"src": "./30Birds/Builders.svg", "className": "w-32 h-auto"},
         {"src": "./30Birds/Praised-mark.svg", "className": "w-24 h-auto"},
         "./30Birds/teamview.webp",
         "./30Birds/company_view.webp",

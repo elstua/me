@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, scrollSpy } from 'react-scroll';
 import { useState, useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
 import "./App.css";
 
 export function HeaderNav(){

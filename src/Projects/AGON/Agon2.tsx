@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from 'react-player'
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
 
 export default function AgonBlock2() {
     
@@ -43,7 +43,7 @@ return (
               }}>
             <ReactPlayer
                 url="./Agon/exercise_small.webm"
-                controls={true}
+                controls={false}
                 playing={true}
                 muted={true}
                 loop={true}

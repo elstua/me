@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectHeader from "../../projectheader";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 export default function YangoBlock() {
 

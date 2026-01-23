@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from 'react-player'
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
 
 export default function BarterMain() {
     const { scrollY } = useScroll();
