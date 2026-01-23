@@ -70,6 +70,7 @@
 }
 
 .phone-block {
+  position: relative;
   border-radius: 24px;
   box-shadow: 0px 10px 21px 0px rgba(73, 70, 65, 0.10), 0px 39px 39px 0px rgba(73, 70, 65, 0.09), 0px 87px 52px 0px rgba(73, 70, 65, 0.05), 0px 154px 62px 0px rgba(73, 70, 65, 0.01);
 }
@@ -87,13 +88,16 @@
 .phone-block::before {
   content: "";
   background-image: url('../public/Iphone.png');
-  background-size: 100%;
-  position: absolute;
+  background-size: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
   top: -1.8%;
   left: -5%;
-  width: 109.6%;
-  height: 106%;
+  width: 109.5%;
+  height: 103.5%;
+  z-index: 1;
+  pointer-events: none;
 }
 .screen-block {
   border-radius: 8%;

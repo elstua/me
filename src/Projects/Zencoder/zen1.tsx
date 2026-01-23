@@ -20,7 +20,7 @@ return (
                 transition: { duration: 0.3 },
               }}>
             <motion.img
-                src="./Zencoder/zencoder_agent.webp"
+                src="/Zencoder/zencoder_agent.webp"
                 alt="Zencoder agent creation screen"
                 className="zencoder-border"
             />
@@ -41,7 +41,7 @@ return (
                 transition: { duration: 0.3 },
               }}>
             <motion.img
-                src="./Zencoder/zencoder_e2e_start.webp"
+                src="/Zencoder/zencoder_e2e_start.webp"
                 alt="Zencoder agent creation screen"
                 className="zencoder-border"
             />
@@ -61,7 +61,7 @@ return (
                 transition: { duration: 0.3 },
               }}>
             <motion.img
-                src="./Zencoder/zencoder_e2e_process.webp"
+                src="/Zencoder/zencoder_e2e_process.webp"
                 alt="Zencoder agent creation screen"
                 className="zencoder-border"
             />

@@ -12,10 +12,10 @@ export default function ZencoderBlock() {
     // Preview images for the toggle button thumbnails
 
     const previewImages = [
-        { src: "./Zencoder/input.webp", className: "h-24" },  
-        { src: "./Zencoder/zencoder_agent.webp", className: "h-36 rounded-md" },     // From AgonBlock2
-        { src: "./Zencoder/zencoder_x_2.webp", className: "h-36 rounded-lg" }, // From AgonBlock3
-        { src: "./Zencoder/context.webp", className: "h-24" },      // From AgonBlock4      // From AgonBlock4
+        { src: "/Zencoder/input.webp", className: "h-24" },  
+        { src: "/Zencoder/zencoder_agent.webp", className: "h-36 rounded-md" },     // From AgonBlock2
+        { src: "/Zencoder/zencoder_x_2.webp", className: "h-36 rounded-lg" }, // From AgonBlock3
+        { src: "/Zencoder/context.webp", className: "h-24" },      // From AgonBlock4      // From AgonBlock4
     ];
 
 
