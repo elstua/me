@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.591c3f03.css",
+    "main.css": "/static/css/main.6d7662d7.css",
     "main.js": "/static/js/main.763646bd.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.15a743f4.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.a3e8d93b.chunk.js",
@@ -19,7 +19,7 @@
     "static/js/453.3f1fb51b.chunk.js": "/static/js/453.3f1fb51b.chunk.js",
     "static/media/Iphone.png": "/static/media/Iphone.a256bdfde6588f02df27.png",
     "index.html": "/index.html",
-    "main.591c3f03.css.map": "/static/css/main.591c3f03.css.map",
+    "main.6d7662d7.css.map": "/static/css/main.6d7662d7.css.map",
     "main.763646bd.js.map": "/static/js/main.763646bd.js.map",
     "reactPlayerYouTube.15a743f4.chunk.js.map": "/static/js/reactPlayerYouTube.15a743f4.chunk.js.map",
     "reactPlayerSoundCloud.a3e8d93b.chunk.js.map": "/static/js/reactPlayerSoundCloud.a3e8d93b.chunk.js.map",
@@ -38,7 +38,7 @@
     "453.3f1fb51b.chunk.js.map": "/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.591c3f03.css",
+    "static/css/main.6d7662d7.css",
     "static/js/main.763646bd.js"
   ]
 }
