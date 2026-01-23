@@ -29,10 +29,10 @@ export default function ThirtyBirdsBlock() {
 
     // Preview images for the toggle button thumbnails
     const previewImages = [
-        {"src": "/30Birds/builders.svg", "className": "w-32 h-auto"},
-        {"src": "/30Birds/Praised-mark.svg", "className": "w-24 h-auto"},
-        "/30Birds/teamview.webp",
-        "/30Birds/company_view.webp",
+        {"src": "./30Birds/builders.svg", "className": "w-32 h-auto"},
+        {"src": "./30Birds/Praised-mark.svg", "className": "w-24 h-auto"},
+        "./30Birds/teamview.webp",
+        "./30Birds/company_view.webp",
     ];
 
     return (
@@ -58,7 +58,7 @@ export default function ThirtyBirdsBlock() {
                 previewImages={previewImages}
             >
                 <div className="lg:flex md:flex hidden flex-row flex-wrap items-center gap- w-full h-auto pb-10 lg:px-20 lg:pb-20">
-                    <motion.img src="/30Birds/Slack.png" 
+                    <motion.img src="./30Birds/Slack.png" 
                         alt="30Birds"  
                         className="w-2/5 h-auto rounded-xl shadowblock"
                         initial={{ 
@@ -73,18 +73,18 @@ export default function ThirtyBirdsBlock() {
                         />
 
                         <div className="flex flex-col w-1/5 h-auto items-center">
-                        <img src="/30Birds/Big Bird.svg"
+                        <img src="./30Birds/Big Bird.svg"
                             alt="Origami Bird"
                             className="max-w-24">
                         </img>
 
-                        <img src="/30Birds/arrow-2.svg"
+                        <img src="./30Birds/arrow-2.svg"
                             alt="arrow"
                             className="w-20">
                         </img>
                         </div>
                     
-                        <img src="/30Birds/open_bird.webp" 
+                        <img src="./30Birds/open_bird.webp" 
                         alt="30Birds" 
                         className="w-2/5 h-auto"  />
                          </div>
@@ -101,7 +101,7 @@ export default function ThirtyBirdsBlock() {
                           }}
                         whileTap={{scale:1.5}}>
                             <ReactPlayer
-                            url="/30Birds/skillsbar.webm"
+                            url="./30Birds/skillsbar.webm"
                             playing={!isMobile}
                             loop={true}
                             controls={true}
@@ -114,7 +114,7 @@ export default function ThirtyBirdsBlock() {
                             />
                         </motion.div>
 
-                        <motion.img src="/30Birds/skillaward.webp" 
+                        <motion.img src="./30Birds/skillaward.webp" 
                         alt="Popup with award for skills" 
                         width={1280} 
                         height={720} 
@@ -129,7 +129,7 @@ export default function ThirtyBirdsBlock() {
                     </div>
 
                     <div className="flex lg:flex-row md:flex-row lg:flex-nowrap md:flex-nowrap flex-col gap-2 flex-wrap items-center w-full h-auto py-3 lg:pt-10 lg:pb-10">
-                        <motion.img src="/30Birds/card1.webp" 
+                        <motion.img src="./30Birds/card1.webp" 
                             alt="Open bird with praise" 
                             className="flex-3 w-[90%] lg:w-1/3 md:w-1/3 h-auto" 
                             initial={{ 
@@ -145,7 +145,7 @@ export default function ThirtyBirdsBlock() {
                         }}
                         whileTap={{scale:1.5}}/>
 
-                        <motion.img src="/30Birds/achieve.webp" 
+                        <motion.img src="./30Birds/achieve.webp" 
                             alt="Achivement for skills" 
                             className="flex-3  w-[90%] lg:w-1/3 md:w-1/3 h-auto" 
                             initial={{ 
@@ -161,7 +161,7 @@ export default function ThirtyBirdsBlock() {
                         }}
                         whileTap={{scale:1.5}}/>
 
-                        <motion.img src="/30Birds/card2.webp" 
+                        <motion.img src="./30Birds/card2.webp" 
                             alt="open bird with big praise" 
                             className="flex-3  w-[90%] lg:w-1/3 md:w-1/3 h-auto" 
                             initial={{ 

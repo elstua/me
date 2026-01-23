@@ -20,13 +20,13 @@ const Footer: React.FC = () => {
             </div>
             <div className='hidden md:flex lg:flex flex-col items-center mt-[24px]'>
                 <div className='flex flex-row items-center my-[-24px] z-[2]'>
-                    <Image src='/Footer/nda_f.webp' alt='Nda period app' layoutId='nda_f'/>
-                    <Image src='/Footer/recorder.mp4' alt='NDA recorder' layoutId='recorder' type='video'/>
+                    <Image src='./Footer/nda_f.webp' alt='Nda period app' layoutId='nda_f'/>
+                    <Image src='./Footer/recorder.mp4' alt='NDA recorder' layoutId='recorder' type='video'/>
                 </div>
                 <div className='flex flex-row items-center my-[-24px]'>
-                    <Image src='/Footer/cabinet_q.webp' alt='storage startup order' layoutId='cabinet_q'/>
-                    <Image src='/Footer/qb-graphics.webp' alt='graphic for storage startup' layoutId='qbgraph'/>
-                    <Image src='/Footer/zorion_app.webp' alt='30Birds' layoutId='zorion'/>
+                    <Image src='./Footer/cabinet_q.webp' alt='storage startup order' layoutId='cabinet_q'/>
+                    <Image src='./Footer/qb-graphics.webp' alt='graphic for storage startup' layoutId='qbgraph'/>
+                    <Image src='./Footer/zorion_app.webp' alt='30Birds' layoutId='zorion'/>
                 </div>
             </div>
 

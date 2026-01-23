@@ -15,7 +15,7 @@ export default function ProjectsRow(){
             <ProjectCard 
                 to="zencoder"
                 hoverColor="#FFB394"
-                logoSrc="/zencoder/logo.svg"
+                logoSrc="./Zencoder/logo.svg"
                 logoAlt="Zencoder coding agent"
                 logoClassName="w-24"
                 text="AI Coding Agent"
@@ -25,7 +25,7 @@ export default function ProjectsRow(){
             <ProjectCard 
                 to="agon"
                 hoverColor="#D5FC51"
-                logoSrc="/Agon/Logo.svg"
+                logoSrc="./Agon/Logo.svg"
                 logoAlt="Agon app"
                 logoClassName="w-16"
                 text="AI Fitness Challenges app"
@@ -34,7 +34,7 @@ export default function ProjectsRow(){
             <ProjectCard 
                 to="30birds"
                 hoverColor="#FCCD56"
-                logoSrc="/30Birds/logo.svg"
+                logoSrc="./30Birds/logo.svg"
                 logoAlt="30 Birds"
                 logoClassName="w-20"
                 text="SaaS that changes 360 review"
@@ -43,7 +43,7 @@ export default function ProjectsRow(){
             <ProjectCard 
                 to="barter"
                 hoverColor="#D3CAE5"
-                logoSrc="/Barter/Logo.svg"
+                logoSrc="./Barter/Logo.svg"
                 logoAlt="Barter logo"
                 logoClassName="w-20"
                 text="Web3 trading engine"
@@ -52,7 +52,7 @@ export default function ProjectsRow(){
             <ProjectCard 
                 to="yango"
                 hoverColor="#FFD700"
-                logoSrc="/Yango/logo.svg"
+                logoSrc="./Yango/logo.svg"
                 logoAlt="Yango logo"
                 logoClassName="w-20"
                 text="Taxi, Delivery, Superapp"

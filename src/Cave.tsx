@@ -32,7 +32,7 @@ interface CaveProps {
 
 const defaultImages: ImageConfig[] = [
   {
-      src: '/Cave/Person.svg',
+      src: './Cave/Person.svg',
       position: {
         top: '60px',
         left: '-20px',
@@ -45,7 +45,7 @@ const defaultImages: ImageConfig[] = [
       pixelSize: 8,
     },
     {
-      src: '/Cave/pen.svg',
+      src: './Cave/pen.svg',
       position: {
         bottom: '0px',
         left: '72px',
@@ -58,7 +58,7 @@ const defaultImages: ImageConfig[] = [
       pixelSize: 10,
     },
     {
-      src: '/Cave/Phone.svg',
+      src: './Cave/Phone.svg',
       position: {
         top: '20px',
         left: '100px',
@@ -71,7 +71,7 @@ const defaultImages: ImageConfig[] = [
       pixelSize: 10,
     },
     {
-      src: '/Cave/navigation.svg',
+      src: './Cave/navigation.svg',
       position: {
         top: '10%',
         left: '240px',
@@ -84,7 +84,7 @@ const defaultImages: ImageConfig[] = [
       pixelSize: 10,
     },
     {
-      src: '/Cave/ocean.svg',
+      src: './Cave/ocean.svg',
       position: {
         top: '40%',
         left: '180px',
@@ -96,7 +96,7 @@ const defaultImages: ImageConfig[] = [
       zIndex: 1,
     },
   {
-    src: '/Cave/bird.svg',
+    src: './Cave/bird.svg',
     position: {
       top: '20%',
       left: '320px',
@@ -108,7 +108,7 @@ const defaultImages: ImageConfig[] = [
     zIndex: 1,
   },
   {
-    src: '/Cave/taxi.svg',
+    src: './Cave/taxi.svg',
     position: {
       bottom: '10px',
       left: '320px',
@@ -120,7 +120,7 @@ const defaultImages: ImageConfig[] = [
     zIndex: 1,
   },
   {
-    src: '/Cave/barter.svg',
+    src: './Cave/barter.svg',
     position: {
       top: '28%',
       left: '420px',
@@ -133,7 +133,7 @@ const defaultImages: ImageConfig[] = [
   },
 
   {
-    src: '/Cave/console.svg',
+    src: './Cave/console.svg',
     position: {
       bottom: '8%',
       left: '460px',
@@ -146,7 +146,7 @@ const defaultImages: ImageConfig[] = [
     pixelSize: 10,
   },
   {
-    src: '/Cave/mind.svg',
+    src: './Cave/mind.svg',
     position: {
       top: '10%',
       left: '480px',
@@ -159,7 +159,7 @@ const defaultImages: ImageConfig[] = [
     pixelSize: 7,
   },
   {
-    src: '/Cave/us.svg',
+    src: './Cave/us.svg',
     position: {
       top: '36%',
       left: '640px',
@@ -172,7 +172,7 @@ const defaultImages: ImageConfig[] = [
     pixelSize: 10,
   },
   {
-    src: '/Cave/wafle.svg',
+    src: './Cave/wafle.svg',
     position: {
       top: '15%',
       left: '740px',
@@ -185,7 +185,7 @@ const defaultImages: ImageConfig[] = [
     pixelSize: 10,
   },
   {
-    src: '/Cave/chips.svg',
+    src: './Cave/chips.svg',
     position: {
       bottom: '10%',
       left: '780px',
@@ -198,7 +198,7 @@ const defaultImages: ImageConfig[] = [
     pixelSize: 10,
   },
   {
-    src: '/Cave/tree 2.svg',
+    src: './Cave/tree 2.svg',
     position: {
       top: '5%',
       left: '830px',
@@ -211,7 +211,7 @@ const defaultImages: ImageConfig[] = [
   },
 
   {
-    src: '/Cave/app store.svg',
+    src: './Cave/app store.svg',
     position: {
       bottom: '10%',
       left: '900px',
@@ -223,7 +223,7 @@ const defaultImages: ImageConfig[] = [
     zIndex: 1,
   },
   {
-    src: '/Cave/agon.svg',
+    src: './Cave/agon.svg',
     position: {
       top: '20%',
       left: '940px',
@@ -235,7 +235,7 @@ const defaultImages: ImageConfig[] = [
     zIndex: 1,
   },
   {
-    src: '/Cave/laptop.svg',
+    src: './Cave/laptop.svg',
     position: {
       top: '10%',
       left: '1040px',
@@ -247,7 +247,7 @@ const defaultImages: ImageConfig[] = [
     zIndex: 1,
   },
   {
-    src: '/Cave/hand.svg',
+    src: './Cave/hand.svg',
     position: {
       bottom: '10px',
       left: '1000px',
@@ -260,7 +260,7 @@ const defaultImages: ImageConfig[] = [
   },
 
   {
-    src: '/Cave/squirl.svg',
+    src: './Cave/squirl.svg',
     position: {
       bottom: '0',
       left: '1120px',

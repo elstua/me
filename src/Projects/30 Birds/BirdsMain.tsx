@@ -28,7 +28,7 @@ return (
                 zIndex: 10,
             }}>
 
-                <img src="/30Birds/cabinet.webp" 
+                <img src="./30Birds/cabinet.webp" 
                 alt="30Birds" 
                 className="rounded-xl shadowblock"
                 />

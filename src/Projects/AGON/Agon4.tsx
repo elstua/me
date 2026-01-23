@@ -22,7 +22,7 @@ return (
     }}
     whileTap={{ scale: 1.2}} >
     <ReactPlayer
-        url="/Agon/buycoins.webm"
+        url="./Agon/buycoins.webm"
         playing={true}
         muted={true}
         controls={false}
@@ -48,7 +48,7 @@ return (
         }}
     >
     <ReactPlayer
-        url="/Agon/onboarding.webm"
+        url="./Agon/onboarding.webm"
         playing={true}
         muted={true}
         controls={false}
@@ -72,7 +72,7 @@ return (
         whileTap={{ scale: 1.2}}
     >
     <img
-        src="/Agon/paywall.webp"
+        src="./Agon/paywall.webp"
         alt="Agon"
         width={'auto'}
         height={"auto"}

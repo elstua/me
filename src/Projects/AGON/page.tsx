@@ -9,10 +9,10 @@ import ExpandableProjectContent from "../../ExpandableProjectContent";
 export default function AgonBlock() {
     // Preview images for the toggle button thumbnails
     const previewImages = [
-        { src: "/Agon/challenge.webp", className: "h-36 rounded-lg" },     // From AgonBlock2
-        { src: "/Agon/done_card.webp", className: "h-20 md:block hidden" },
-        { src: "/Agon/onboarding04.webp", className: "h-36 h-20 rounded-lg" }, // From AgonBlock3
-        { src: "/Agon/paywall.webp", className: "h-36 h-20 rounded-lg" },      // From AgonBlock4
+        { src: "./Agon/challenge.webp", className: "h-36 rounded-lg" },     // From AgonBlock2
+        { src: "./Agon/done_card.webp", className: "h-20 md:block hidden" },
+        { src: "./Agon/onboarding04.webp", className: "h-36 h-20 rounded-lg" }, // From AgonBlock3
+        { src: "./Agon/paywall.webp", className: "h-36 h-20 rounded-lg" },      // From AgonBlock4
     ];
 
     return (

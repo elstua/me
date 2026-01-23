@@ -22,7 +22,7 @@ return (
                 transition: { duration: 0.3 },
               }}>
             <motion.img
-                src="/Agon/challenge.webp"
+                src="./Agon/challenge.webp"
                 alt="Agon"
                 className="screen-block"
             />
@@ -42,7 +42,7 @@ return (
                 transition: { duration: 0.3 },
               }}>
             <ReactPlayer
-                url="/Agon/exercise_small.webm"
+                url="./Agon/exercise_small.webm"
                 controls={true}
                 playing={true}
                 muted={true}

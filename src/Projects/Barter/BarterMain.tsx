@@ -34,7 +34,7 @@ return (
                 zIndex: 10,
             }}>
                 <ReactPlayer
-                    url="/Barter/barter.webm"
+                    url="./Barter/barter.webm"
                     // playing={!isMobile}
                     muted={true}
                     loop={true}

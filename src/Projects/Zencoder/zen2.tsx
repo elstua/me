@@ -20,7 +20,7 @@ return (
                 transition: { duration: 0.3 },
               }}>
             <motion.img
-                src="/zencoder/closeup_1.webp"
+                src="./Zencoder/closeup_1.webp"
                 alt="Zencoder agent creation screen"
                 className="zencoder-border"
             />
@@ -40,7 +40,7 @@ return (
                 transition: { duration: 0.3 },
               }}>
             <motion.img
-                src="/zencoder/closeup_2.webp"
+                src="./Zencoder/closeup_2.webp"
                 alt="Zencoder agent creation screen"
                 className="zencoder-border"
             />
