@@ -15,10 +15,11 @@ export default function ProjectsRow(){
             <ProjectCard 
                 to="zencoder"
                 hoverColor="#FFB394"
-                logoSrc="./Zencoder/logo.svg"
+                logoSrc="./Zencoder/Logo.svg"
                 logoAlt="Zencoder coding agent"
                 logoClassName="w-24"
                 text="AI Coding Agent"
+                role="founding designer"
             />
 
 
@@ -29,6 +30,7 @@ export default function ProjectsRow(){
                 logoAlt="Agon app"
                 logoClassName="w-16"
                 text="AI Fitness Challenges app"
+                role="founding designer"
             />
 
             <ProjectCard 
@@ -38,6 +40,7 @@ export default function ProjectsRow(){
                 logoAlt="30 Birds"
                 logoClassName="w-20"
                 text="SaaS that changes 360 review"
+                role="founding designer"
             />
 
             <ProjectCard 
@@ -47,6 +50,7 @@ export default function ProjectsRow(){
                 logoAlt="Barter logo"
                 logoClassName="w-20"
                 text="Web3 trading engine"
+                role="founding designer"
             />
 
             <ProjectCard 
@@ -56,6 +60,7 @@ export default function ProjectsRow(){
                 logoAlt="Yango logo"
                 logoClassName="w-20"
                 text="Taxi, Delivery, Superapp"
+                role="product designer"
             />
             
         </div>

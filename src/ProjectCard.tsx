@@ -10,6 +10,7 @@ interface ProjectCardProps {
     logoAlt: string;         // Description of the logo for accessibility
     logoClassName: string;   // CSS classes to control logo size
     text?: string;           // Optional text to display
+    role?: string;           // Optional role description to display
 }
 
 // Helper function that generates a random rotation angle
@@ -23,7 +24,8 @@ export default function ProjectCard({
     logoSrc,
     logoAlt,
     logoClassName,
-    text
+    text,
+    role
 }: ProjectCardProps) {
     
     // Convert the hover color to transparent for initial state
@@ -53,12 +55,15 @@ export default function ProjectCard({
                     spy={true} 
                     smooth={true}
                     duration={500}
-                    className="flex flex-row md:flex-col flex-wrap w-full p-4 gap-4 overflow-hidden"
+                    className="flex flex-row md:flex-col flex-wrap w-full p-4 justify-between overflow-hidden"
                 >
+                    <div className="flex flex-col gap-3">
                     <img src={logoSrc} alt={logoAlt} className={logoClassName} />
                     
-                    {/* Only show tags section if tags are provided */}
                     <div className="font-mono text-sm text-neutral-500">{text}</div>
+                    </div>
+
+                    <div className="pt-4 font-mono text-sm text-neutral-500">{role}</div>
                 </Link>
             </motion.div>
     );
