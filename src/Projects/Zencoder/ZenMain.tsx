@@ -29,7 +29,7 @@ return (
             whileTap={{
             }}>
 
-                <img src="/Zencoder/zencoder-main-chat.webp" 
+                <img src="./zencoder-main-chat.webp" 
                 alt="Zencoder main chat" 
                 className="rounded-xl zencoder-hero"
                 />
