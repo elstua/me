@@ -1,7 +1,7 @@
 {
     "$schema": "./node_modules/wrangler/config-schema.json",
     "name": "portfolio",
-    "main": "src/index.tsx",
+    "main": "src/index.js",
     "compatibility_date": "2022-07-12",
     "workers_dev": false,
     "route": {
@@ -23,7 +23,7 @@
         },
         "kv_namespaces": [
           {
-            "binding": "<MY_NAMESPACE>",
+            "binding": "PORTFOLIO_KV",
             "id": "portfolio-staging-kv"
           }
         ]
