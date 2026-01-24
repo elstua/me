@@ -42,6 +42,8 @@ export default function ExpandableProjectContent({
 }: ExpandableProjectContentProps) {
     // State to track if content is expanded or collapsed
     const [isExpanded, setIsExpanded] = useState(false);
+    // State to track if the button is being hovered
+    const [isHovered, setIsHovered] = useState(false);
 
     // Animation variants for the content blocks
     const contentVariants = {
@@ -67,6 +69,8 @@ export default function ExpandableProjectContent({
             {/* Toggle Button with smooth layout transitions */}
             <motion.button
                 onClick={() => setIsExpanded(!isExpanded)}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
                 className={`w-full flex items-center transition-colors duration-300 overflow-none relative
                     ${isExpanded 
                         ? 'h-16 py-12 justify-center hover:text-neutral-500 hover:underline' 
@@ -79,7 +83,6 @@ export default function ExpandableProjectContent({
                 }}
                 initial="initial"
                 animate={isExpanded ? "expanded" : "initial"}
-                whileHover="hover"
             >
                 <AnimatePresence mode="wait">
                     {isExpanded ? (
@@ -130,15 +133,24 @@ export default function ExpandableProjectContent({
                                             ? `${projectName} preview ${index + 1}` 
                                             : image.alt || `${projectName} preview ${index + 1}`;
 
+                                        const randomRotation = getRandomRotation();
                                         return (
                                             <motion.img
                                                 layout
-                                                variants={{
-                                                    initial: { rotate: getRandomRotation(), scale: 0.9 },
-                                                    hover: { rotate: 0, scale: 1 },
+                                                initial={{ 
+                                                    rotate: randomRotation, 
+                                                    scale: 0.9,
+                                                    opacity: 0 
                                                 }}
-                                                initial={{ opacity: 0 }}
-                                                animate={{ opacity: 1 }}
+                                                animate={isHovered ? {
+                                                    rotate: 0, 
+                                                    scale: 1,
+                                                    opacity: 1 
+                                                } : {
+                                                    rotate: randomRotation, 
+                                                    scale: 0.9,
+                                                    opacity: 1 
+                                                }}
                                                 exit={{ scale: 0.8, opacity: 0, y: 100 }}
                                                 transition={{ duration: 0.2, delay: index * 0.05 }}
                                                 key={index}
