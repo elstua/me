@@ -1,0 +1,32 @@
+{
+    "$schema": "./node_modules/wrangler/config-schema.json",
+    "name": "stua.me",
+    "main": "src/index.tsx",
+    "compatibility_date": "2022-07-12",
+    "workers_dev": false,
+    "route": {
+      "pattern": "stua.me/*",
+      "zone_name": "stua.me"
+    },
+    "kv_namespaces": [
+      {
+        "binding": "PORTFOLIO_KV",
+        "id": "portfolio-kv"
+      }
+    ],
+    "env": {
+      "staging": {
+        "name": "portfolio-staging",
+        "route": {
+          "pattern": "staging.stua.me/*",
+          "zone_name": "stua.me"
+        },
+        "kv_namespaces": [
+          {
+            "binding": "<MY_NAMESPACE>",
+            "id": "portfolio-staging-kv"
+          }
+        ]
+      }
+    }
+  }
