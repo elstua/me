@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.2.0",
-  "homepage": "https://elstua.github.io/",
+  "homepage": "https://stua.me",
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
