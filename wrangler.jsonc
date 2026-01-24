@@ -8,12 +8,6 @@
       "pattern": "stua.me/*",
       "zone_name": "stua.me"
     },
-    "kv_namespaces": [
-      {
-        "binding": "PORTFOLIO_KV",
-        "id": "portfolio-kv"
-      }
-    ],
     "env": {
       "staging": {
         "name": "portfolio-staging",
@@ -21,12 +15,6 @@
           "pattern": "staging.stua.me/*",
           "zone_name": "stua.me"
         },
-        "kv_namespaces": [
-          {
-            "binding": "PORTFOLIO_KV",
-            "id": "portfolio-staging-kv"
-          }
-        ]
       }
     }
   }
