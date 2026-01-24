@@ -1,5 +1,5 @@
 'use client'
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import FirstScreen from "./main.tsx";
 import Header from "./header.tsx";
@@ -13,6 +13,12 @@ import Footer from "./footer.tsx";
 import Yango from "./Projects/Yango/page.tsx";
 
 function App() {
+  useEffect(() => {
+    // Set CSS variable for iPhone image path
+    const publicUrl = process.env.PUBLIC_URL || '';
+    document.documentElement.style.setProperty('--iphone-image', `url('${publicUrl}/Iphone.png')`);
+  }, []);
+
   return (
     <body>
       <Header />
