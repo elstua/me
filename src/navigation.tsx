@@ -15,7 +15,7 @@ export default function ProjectsRow(){
             <ProjectCard 
                 to="zencoder"
                 hoverColor="#FFB394"
-                logoSrc="./Zencoder/Logo.svg"
+                logoSrc="./zen-logo.svg"
                 logoAlt="Zencoder coding agent"
                 logoClassName="w-24"
                 text="AI Coding Agent"
