@@ -1,20 +1,5 @@
 {
     "$schema": "./node_modules/wrangler/config-schema.json",
     "name": "me",
-    "main": "src/index.js",
-    "compatibility_date": "2022-07-12",
-    "workers_dev": false,
-    "route": {
-      "pattern": "stua.me/*",
-      "zone_name": "stua.me"
-    },
-    "env": {
-      "staging": {
-        "name": "portfolio-staging",
-        "route": {
-          "pattern": "staging.stua.me/*",
-          "zone_name": "stua.me"
-        },
-      }
-    }
+    "compatibility_date": "2022-07-12"
   }
