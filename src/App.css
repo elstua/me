@@ -87,7 +87,7 @@
 
 .phone-block::before {
   content: "";
-  background-image: url('../public/Iphone.png');
+  background-image: url('/Iphone.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
