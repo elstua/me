@@ -13,7 +13,7 @@ export default function FirstScreen() {
             Hi, I'm Artem Savelev, Product Designer
           </h1>
           <p className='md:w-2/3 xl:w-3/5 w-full'>
-          From pre-seed startups to large corporations, I’ve explored ways to give people new angles on their everyday tasks.
+          From pre-seed startups to large corporations, for the last 10 years I've explored ways to give people new angles on their everyday tasks.
           <br />
           Believe that software is a culture medium and a story. 
           <br />

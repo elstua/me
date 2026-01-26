@@ -44,6 +44,14 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .content-width{
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 @media screen and (max-width: 320px) {
 
   .mainblock-height{
@@ -60,7 +68,7 @@
 
 @media screen and (max-width: 720px) {
   
-  .mainblock-height{
+.mainblock-height{
   height: 90svh;
 }
 .content-width{
@@ -131,14 +139,7 @@
 
 .headernav:hover{
   background-color:rgba(255, 255, 255, 0.6);
-  filter: backdrop(0.1);
-}
-
-.agon-bg{
-  background-color: #222222;
-}
-.birds-bg{
-  background-color: #22242D;
+  filter: backdrop(0.2);
 }
 
 /* .picture {
