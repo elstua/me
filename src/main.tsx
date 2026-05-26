@@ -69,7 +69,7 @@ export default function FirstScreen() {
           <div className='flex pt-10'>
           <ul className="flex flex-row md:flex-col lg:*:items-end w-full gap-4">
           <li className='flex flex-row md:flex-col gap-2'><p className='opacity-50'>Social</p> 
-          <a href="https://twitter.com/s_tu_a" target="_blank" rel="noopener noreferrer" 
+          <a href="https://x.com/s_II_a" target="_blank" rel="noopener noreferrer" 
           className='underline hover:no-underline'>Twitter</a>
           <a href="https://linkedin.com/in/stua" target="_blank" rel="noopener noreferrer" 
             className='underline hover:no-underline'>LinkedIn</a>
