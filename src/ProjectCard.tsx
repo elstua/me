@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import React from 'react';
 import { Link } from 'react-scroll';
+import { stableRotation } from './utils/stableRotation';
 
 // This defines what properties our component expects to receive
 interface ProjectCardProps {
@@ -12,11 +13,6 @@ interface ProjectCardProps {
     text?: string;           // Optional text to display
     role?: string;           // Optional role description to display
 }
-
-// Helper function that generates a random rotation angle
-const getRandomRotation = () => {
-    return Math.floor(Math.random() * 10) - 4; // Random number between -4 and 4
-};
 
 export default function ProjectCard({
     to,
@@ -43,7 +39,7 @@ export default function ProjectCard({
             }} 
             whileHover={{
                 zIndex: 10,
-                rotate: getRandomRotation(),
+                rotate: stableRotation(to),
                 y: -20,
                 transition: { duration: 0.3 },
                 backgroundColor: hoverColor,

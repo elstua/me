@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Artem Savelev — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An Astro portfolio with React islands for the interactive case-study sections and an MDX content collection for writing.
 
-## Available Scripts
+## Local development
 
-In the project directory, you can run:
+Requires Node.js 22.12 or newer.
 
-### `npm start`
+```bash
+npm install
+npm run dev
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The local site is available at `http://localhost:4321` by default.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Commands
 
-### `npm test`
+```bash
+npm run dev       # Start the development server
+npm run check     # Run Astro and TypeScript checks
+npm run build     # Validate and create the production site in dist/
+npm run preview   # Preview the production build locally
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Publishing a blog post
 
-### `npm run build`
+1. Copy `src/content/blog/example-post.mdx` to a new kebab-case filename, such as `designing-agent-feedback.mdx`.
+2. Update the title, description, publication date, and tags in the frontmatter.
+3. Write the article using Markdown or MDX.
+4. Set `draft: false` when it is ready to appear on `/blog/`.
+5. Run `npm run build` before publishing.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Blog metadata is validated by `src/content.config.ts`. Invalid or incomplete frontmatter fails the build instead of publishing a broken page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```text
+src/
+├── pages/                 Astro routes
+│   ├── index.astro        Portfolio homepage
+│   └── blog/              Writing index and article route
+├── content/blog/          MDX articles and drafts
+├── layouts/               Shared document metadata and layout
+├── styles/                Blog/editorial styles
+└── Projects/              Existing interactive React case studies
+```
 
-### `npm run eject`
+Static media stays in `public/`. The site is generated as static files and remains compatible with the existing Cloudflare Pages setup.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The build also adds a tiny static-file worker entry used by private Sites previews. It does not change the generated pages or require a runtime for the existing Cloudflare Pages deployment.

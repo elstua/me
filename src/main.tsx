@@ -73,6 +73,7 @@ export default function FirstScreen() {
           className='underline hover:no-underline'>Twitter</a>
           <a href="https://linkedin.com/in/stua" target="_blank" rel="noopener noreferrer" 
             className='underline hover:no-underline'>LinkedIn</a>
+          <a href="/blog/" className='underline hover:no-underline'>Writing</a>
           </li>
           <li className='flex flex-row md:flex-col gap-2'><p className='opacity-50'>City</p><p>Lisbon</p></li>
           </ul>
@@ -82,4 +83,3 @@ export default function FirstScreen() {
       </main>
     );
   }
-

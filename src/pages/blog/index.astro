@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+
+const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+);
+
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat("en", { month: "short", day: "numeric", year: "numeric" }).format(date);
+---
+
+<BaseLayout
+  title="Writing — Artem Savelev"
+  description="Notes on product design, AI tools, teams, and the decisions that shape software."
+>
+  <div class="editorial-shell">
+    <SiteHeader current="blog" />
+    <main class="writing-index">
+      <header class="writing-intro">
+        <p class="eyebrow">Writing</p>
+        <h1>Notes from inside the work.</h1>
+        <p>Product design, AI tools, teams, and the decisions that quietly shape software.</p>
+      </header>
+
+      {posts.length > 0 ? (
+        <ol class="post-list">
+          {posts.map((post) => (
+            <li>
+              <a href={`/blog/${post.id.replace(/\.(md|mdx)$/, "")}/`}>
+                <div>
+                  <h2>{post.data.title}</h2>
+                  <p>{post.data.description}</p>
+                </div>
+                <time datetime={post.data.publishDate.toISOString()}>{formatDate(post.data.publishDate)}</time>
+              </a>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <div class="empty-writing">
+          <p>The first note is in progress.</p>
+          <span>Check back soon—or explore the work in the meantime.</span>
+          <a href="/#zencoder">View selected work →</a>
+        </div>
+      )}
+    </main>
+    <footer class="editorial-footer">
+      <span>Artem Savelev · Lisbon</span>
+      <a href="mailto:stua@fastmail.com">stua@fastmail.com</a>
+    </footer>
+  </div>
+</BaseLayout>

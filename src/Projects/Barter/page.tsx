@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import ProjectHeader from '../../projectheader';
-import ReactPlayer from 'react-player';
+import ReactPlayer from '../../MediaPlayer';
 import { motion } from 'motion/react';
 import Image from '../../imageExpand';
 import ExpandableProjectContent from '../../ExpandableProjectContent';
 import BarterMain from './BarterMain';
+import { stableRotation } from '../../utils/stableRotation';
 export default function BarterBlock() {
     const [isMobile, setIsMobile] = useState(false);
     
@@ -23,10 +24,6 @@ export default function BarterBlock() {
             return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
-
-    const getRandomRotation = () => {
-        return Math.floor(Math.random() * 10) - 6 // Generate a random number between -4 and 4
-    };
 
     // Preview images for the toggle button thumbnails
     const previewImages = [
@@ -89,7 +86,7 @@ export default function BarterBlock() {
                     
                     <motion.div 
                         className='flex h-full phone-block relative'
-                        initial={{ rotate: getRandomRotation(),
+                        initial={{ rotate: stableRotation("barter-mobile", -6, 3),
                             scale: 1,
                         }}
                         whileHover={{

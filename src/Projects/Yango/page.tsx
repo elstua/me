@@ -1,13 +1,10 @@
 import React from "react";
 import ProjectHeader from "../../projectheader";
 import { motion } from "motion/react";
+import { stableRotation } from "../../utils/stableRotation";
 
 export default function YangoBlock() {
 
-    const getRandomRotation = () => {
-        return Math.floor(Math.random() * 10) - 4; // Generate a random number between -4 and 4
-    };
-    
     return (
         
         <div id="yango" className="flex flex-col items-center w-full">
@@ -27,7 +24,7 @@ export default function YangoBlock() {
                 <motion.div 
                         className='phone-block'
                         initial={{ 
-                            rotate: `${String(getRandomRotation())}deg`,
+                            rotate: `${stableRotation("yango-delivery")}deg`,
                             scale: 1,
                         }} 
                         whileHover={{
@@ -48,7 +45,7 @@ export default function YangoBlock() {
                     <motion.div 
                         className='h-full phone-block'
                         initial={{ 
-                            rotate: `${String(getRandomRotation())}deg`,
+                            rotate: `${stableRotation("yango-map")}deg`,
                             scale: 1,
                         }} 
                         whileHover={{
@@ -69,7 +66,7 @@ export default function YangoBlock() {
                     <motion.div 
                         className='h-full phone-block'
                         initial={{ 
-                            rotate: `${String(getRandomRotation())}deg`,
+                            rotate: `${stableRotation("yango-history")}deg`,
                             scale: 1,
                         }} 
                         whileHover={{

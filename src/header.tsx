@@ -141,9 +141,11 @@ export default function Header(){
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
     useEffect(() => {
         window.addEventListener("scroll", headerScroll);
+        return () => window.removeEventListener("scroll", headerScroll);
     }, []);
 
     return (
@@ -182,15 +184,20 @@ export default function Header(){
                     <HeaderNav />
                 </div>
 
-                <a
-                    href="mailto:stua@fastmail.com"
-                    className="hidden md:flex md:p-4 justify-center content-center items-center align-middle
-                    rounded-full font-mono text-sm h-12 text-black cursor-pointer
-                    transition-all ease-in-out
-                    headernav duration-300 ..."
-                >
-                    ↘︎ Contact me
-                </a>
+                <div className="hidden md:flex items-center">
+                    <a
+                        href="/blog/"
+                        className="flex md:p-4 justify-center content-center items-center rounded-full font-mono text-sm h-12 text-black headernav transition-all ease-in-out duration-300"
+                    >
+                        Writing
+                    </a>
+                    <a
+                        href="mailto:stua@fastmail.com"
+                        className="flex md:p-4 justify-center content-center items-center rounded-full font-mono text-sm h-12 text-black headernav transition-all ease-in-out duration-300"
+                    >
+                        ↘︎ Contact
+                    </a>
+                </div>
                 </motion.div>
             
         </header>

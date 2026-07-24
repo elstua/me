@@ -1,0 +1,16 @@
+---
+interface Props {
+  current?: "work" | "blog";
+}
+
+const { current } = Astro.props;
+---
+
+<header class="editorial-header">
+  <a class="editorial-wordmark" href="/">Artem Savelev</a>
+  <nav aria-label="Primary navigation">
+    <a href="/#zencoder" aria-current={current === "work" ? "page" : undefined}>Work</a>
+    <a href="/blog/" aria-current={current === "blog" ? "page" : undefined}>Writing</a>
+    <a href="mailto:stua@fastmail.com">Contact ↘</a>
+  </nav>
+</header>

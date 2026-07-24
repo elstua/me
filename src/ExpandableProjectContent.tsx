@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { stableRotation } from './utils/stableRotation';
 
 // Type for individual preview images with customizable properties
 export interface PreviewImage {
@@ -13,10 +14,6 @@ interface ExpandableProjectContentProps {
     previewImages: (string | PreviewImage)[];  // Can be either a string path or an object with properties
     children: React.ReactNode;
 }
-
-const getRandomRotation = () => {
-    return Math.floor(Math.random() * 10) - 4; // Generate a random number between -2 and 2
-};
 
 /**
  * A reusable component that wraps project content blocks with a toggle button.
@@ -133,7 +130,7 @@ export default function ExpandableProjectContent({
                                             ? `${projectName} preview ${index + 1}` 
                                             : image.alt || `${projectName} preview ${index + 1}`;
 
-                                        const randomRotation = getRandomRotation();
+                                        const randomRotation = stableRotation(`${projectName}-${index}`);
                                         return (
                                             <motion.img
                                                 layout

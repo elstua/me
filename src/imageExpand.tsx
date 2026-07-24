@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { useState } from "react";
 import { motion } from "motion/react";
+import { stableRotation } from "./utils/stableRotation";
 
 interface ImageProps {
   src: string;
@@ -13,9 +14,6 @@ interface ImageProps {
 
 function Image({ src, alt, layoutId, type = 'image' }: ImageProps) {
   const [open, setOpen] = useState(true);
-  const getRandomRotation = () => {
-    return Math.floor(Math.random() * 10) - 8; // Generate a random number between -4 and 4
-};
 
   return (
     <>
@@ -27,7 +25,7 @@ function Image({ src, alt, layoutId, type = 'image' }: ImageProps) {
             onClick={() => setOpen(false)}
             initial={{
               
-              rotate: `${String(getRandomRotation())}deg`, 
+              rotate: `${stableRotation(layoutId, -8, 1)}deg`,
               zIndex: 1,
               margin: '0 -8px'}}
             whileHover={{ 

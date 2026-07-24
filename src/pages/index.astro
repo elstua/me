@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../header";
+import FirstScreen from "../main";
+import ProjectsRow from "../navigation";
+import ZencoderBlock from "../Projects/Zencoder/page";
+import AgonBlock from "../Projects/AGON/page";
+import ThirtyBirdsBlock from "../Projects/30 Birds/page";
+import BarterBlock from "../Projects/Barter/page";
+import YangoBlock from "../Projects/Yango/page";
+import Footer from "../footer";
+---
+
+<BaseLayout>
+  <Header client:load />
+  <FirstScreen client:load />
+  <ProjectsRow client:visible />
+  <section><ZencoderBlock client:visible /></section>
+  <section><AgonBlock client:visible /></section>
+  <section><ThirtyBirdsBlock client:visible /></section>
+  <section><BarterBlock client:visible /></section>
+  <section><YangoBlock client:visible /></section>
+  <Footer client:visible />
+</BaseLayout>

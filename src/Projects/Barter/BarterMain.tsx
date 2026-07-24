@@ -1,5 +1,5 @@
 import React from "react";
-import ReactPlayer from 'react-player'
+import ReactPlayer from '../../MediaPlayer'
 import { motion, useScroll, useTransform } from "motion/react";
 
 export default function BarterMain() {

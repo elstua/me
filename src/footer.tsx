@@ -2,7 +2,7 @@ import React from 'react';
 import Image from './imageExpand';
 
 const Footer: React.FC = () => {
-    const version = '0.0.3';
+    const version = '1.0.0';
 
     return (
         <footer className="flex flex-col items-center w-full z-[99]">
@@ -11,6 +11,7 @@ const Footer: React.FC = () => {
                 <div className='flex flex-col items-start w-2/5'>
                 <p className=''>That's all for now! Thanks for scrolling ♥︎</p>
                 <p className='opacity-50'> I continue to develop and add things there</p>
+                <a href="/blog/" className="pt-3 underline hover:no-underline">Read my writing →</a>
                 </div>
 
                 <div className='flex flex-col items-end'>

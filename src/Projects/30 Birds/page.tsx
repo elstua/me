@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import ProjectHeader from "../../projectheader";
 import { motion } from "motion/react";
-import ReactPlayer from "react-player";
+import ReactPlayer from "../../MediaPlayer";
 import BirdsMain from "./BirdsMain";
 import ExpandableProjectContent from "../../ExpandableProjectContent";
+import { stableRotation } from "../../utils/stableRotation";
 
 export default function ThirtyBirdsBlock() {
     const [isMobile, setIsMobile] = useState(false);
@@ -23,9 +24,7 @@ export default function ThirtyBirdsBlock() {
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
-    const getRandomRotation = () => {
-        return Math.floor(Math.random() * 10) - 4; // Generate a random number between -4 and 4
-    };
+    const getRandomRotation = () => stableRotation("30-birds");
 
     // Preview images for the toggle button thumbnails
     const previewImages = [
