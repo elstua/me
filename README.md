@@ -46,5 +46,3 @@ src/
 ```
 
 Static media stays in `public/`. The site is generated as static files and remains compatible with the existing Cloudflare Pages setup.
-
-The build also adds a tiny static-file worker entry used by private Sites previews. It does not change the generated pages or require a runtime for the existing Cloudflare Pages deployment.
