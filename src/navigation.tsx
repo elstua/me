@@ -7,7 +7,13 @@ export default function ProjectsRow(){
     return (
         <div className="flex-col items-center w-full hidden md:flex lg:flex md:px-4">
 
-            <div className="flex flex-row gap-2 content-width font-mono text-sm text-neutral-900 items-left pb-4 md:sm-8"><p className="text-neutral-500">Now:</p><p>Open for projects and full-time opportunities</p></div>
+            <div className="flex flex-row gap-2 content-width font-mono text-sm text-neutral-900 items-left pb-4 md:sm-8">
+                <p className="text-neutral-500">Now:</p>
+                <p>
+                    At <a href="https://fastrepl.com/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">fastrepl.com</a>{' '}
+                    building <a href="https://char.com/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">Char</a>
+                </p>
+            </div>
             <div className="flex-col content-width font-mono text-sm text-neutral-900 items-left pb-4 md:sm-8"><p className="text-neutral-500">Before:</p></div>
 
         <div className="content-width flex flex-col md:flex-row flex-nowrap items-center justify-between gap-1 md:gap-4">
