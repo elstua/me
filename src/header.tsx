@@ -186,12 +186,6 @@ export default function Header(){
 
                 <div className="hidden md:flex items-center">
                     <a
-                        href="/blog/"
-                        className="flex md:p-4 justify-center content-center items-center rounded-full font-mono text-sm h-12 text-black headernav transition-all ease-in-out duration-300"
-                    >
-                        Writing
-                    </a>
-                    <a
                         href="mailto:stua@fastmail.com"
                         className="flex md:p-4 justify-center content-center items-center rounded-full font-mono text-sm h-12 text-black headernav transition-all ease-in-out duration-300"
                     >
