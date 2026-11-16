@@ -37,7 +37,7 @@ Blog metadata is validated by `src/content.config.ts`. Invalid or incomplete fro
 ```text
 src/
 ├── pages/                 Astro routes
-│   ├── index.astro        Portfolio homepage
+│   ├── index.astro        Immersive 3D cave homepage
 │   └── blog/              Writing index and article route
 ├── content/blog/          MDX articles and drafts
 ├── layouts/               Shared document metadata and layout
